@@ -16,8 +16,10 @@
     "secondary_color": "#b74d22",
     "border_color": "#e6e6e6",
     "price_primary": "#010101",
+    "link_color_hover": "#b74d22",
     "btn_bg": "#b74d22",
     "btn_radius": 0,
+    "btn_radius2": 5,
     "atc_ajax_enable": true,
     "wishlist_mode": "1",
     "enable_compe": true,
@@ -191,8 +193,8 @@
           "70811116-77e4-478a-bdb3-8fbf6a3cf48b": {
             "type": "mega",
             "settings": {
-              "title": "SHOP",
-              "url": "shopify:\/\/collections",
+              "title": "UNSTITCHED SUITS",
+              "url": "shopify:\/\/collections\/all",
               "open_link": "_self",
               "icon": "",
               "cus_cl": false,
@@ -301,6 +303,7 @@
           },
           "10c36dd8-9579-4b32-9578-0d5ffb00cf32": {
             "type": "mega",
+            "disabled": true,
             "settings": {
               "id": 2
             }
@@ -356,215 +359,6 @@
               "sp_bettewn_item": 20,
               "col": "3"
             }
-          },
-          "fe9fa8f2-acb2-4594-98ac-34b684023811": {
-            "type": "mega",
-            "settings": {
-              "id": 3
-            }
-          },
-          "50c3af4b-e0cc-415e-a70d-03dc5cbb1616": {
-            "type": "link",
-            "settings": {
-              "tt_hd": "SHOP PAGES",
-              "use_bd": true,
-              "url": "",
-              "open_link": "_self",
-              "menu": "",
-              "item_fsize": 13,
-              "sp_bettewn_item": 20,
-              "col": "2"
-            }
-          },
-          "8fcf2d6d-0f71-4cd8-bb5c-bf323840bd1b": {
-            "type": "link",
-            "settings": {
-              "tt_hd": "FEATURES",
-              "use_bd": true,
-              "url": "",
-              "open_link": "_self",
-              "menu": "",
-              "item_fsize": 13,
-              "sp_bettewn_item": 20,
-              "col": "2"
-            }
-          },
-          "6765a368-76af-4fc3-97bf-1d4798edc6cd": {
-            "type": "cat_list",
-            "settings": {
-              "mg_heading": "HEADING",
-              "use_heading": false,
-              "collection_des": "1",
-              "collection_list": [
-                "men",
-                "women"
-              ],
-              "title_fs": 16,
-              "title_fw": 500,
-              "pri_cl": "#ffffff",
-              "second_cl": "#000000",
-              "pri_hover_cl": "#000000",
-              "second_hover_cl": "#ffffff",
-              "content_align": "center",
-              "content_pos": "2",
-              "space_bottom": 15,
-              "space_bottom_mb": 10,
-              "content_width": 140,
-              "content_height": 42,
-              "content_width_mb": 100,
-              "content_height_mb": 40,
-              "open_link": "_self",
-              "item_rd": 0,
-              "img_effect": "none",
-              "b_effect": "none",
-              "image_ratio": "ratioadapt",
-              "image_size": "cover",
-              "image_position": "8",
-              "col_dk": "1",
-              "space_h_item": "0",
-              "space_v_item": "15",
-              "col": "3"
-            }
-          },
-          "4030ceda-2404-4a0f-9f66-f997d016db46": {
-            "type": "pr_loop",
-            "settings": {
-              "heading": "TOP RATE",
-              "use_bd": true,
-              "collection": "women",
-              "image_ratio": "ratio1_1",
-              "image_size": "cover",
-              "image_position": "8",
-              "limit": 4,
-              "space_v_item": "30",
-              "col": "5"
-            }
-          },
-          "c7c18a38-8c7c-48b6-b072-54ae524dd26f": {
-            "type": "mega",
-            "settings": {
-              "id": 4
-            }
-          },
-          "94326d23-02b9-4d12-bcba-a20f975d317e": {
-            "type": "link",
-            "settings": {
-              "tt_hd": "PRODUCT LAYOUT",
-              "use_bd": true,
-              "url": "",
-              "open_link": "_self",
-              "menu": "",
-              "item_fsize": 13,
-              "sp_bettewn_item": 20,
-              "col": "3"
-            }
-          },
-          "34c5a608-2150-4270-87ef-7397b8cb67ff": {
-            "type": "link",
-            "settings": {
-              "tt_hd": "PRoduct Details",
-              "use_bd": true,
-              "url": "",
-              "open_link": "_self",
-              "menu": "",
-              "item_fsize": 13,
-              "sp_bettewn_item": 20,
-              "col": "3"
-            }
-          },
-          "62f2f1f9-7c03-4473-81bb-b5c4b4bf4513": {
-            "type": "link",
-            "settings": {
-              "tt_hd": "PRODUCT SWATCH",
-              "use_bd": true,
-              "url": "",
-              "open_link": "_self",
-              "menu": "",
-              "item_fsize": 13,
-              "sp_bettewn_item": 20,
-              "col": "3"
-            }
-          },
-          "a98310df-d436-4f3d-bf5b-e5e231777cb8": {
-            "type": "link",
-            "settings": {
-              "tt_hd": "PRODUCT FEATURES",
-              "use_bd": true,
-              "url": "",
-              "open_link": "_self",
-              "menu": "",
-              "item_fsize": 13,
-              "sp_bettewn_item": 20,
-              "col": "3"
-            }
-          },
-          "a9dd9f98-b46f-4e8d-bd6b-7ae3785ed104": {
-            "type": "mega",
-            "settings": {
-              "id": 5
-            }
-          },
-          "cd9b0746-4c44-4d25-b4cb-6ac8419f69fe": {
-            "type": "link",
-            "settings": {
-              "tt_hd": "Blog Style",
-              "use_bd": true,
-              "url": "",
-              "open_link": "_self",
-              "menu": "",
-              "item_fsize": 13,
-              "sp_bettewn_item": 20,
-              "col": "2"
-            }
-          },
-          "6662331f-5bad-4833-a231-333460f7b959": {
-            "type": "link",
-            "settings": {
-              "tt_hd": "SINGLE POST",
-              "use_bd": true,
-              "url": "",
-              "open_link": "_self",
-              "menu": "",
-              "item_fsize": 13,
-              "sp_bettewn_item": 20,
-              "col": "3"
-            }
-          },
-          "1a6057a6-dada-44ab-93d9-24afc4bca54f": {
-            "type": "blogs",
-            "settings": {
-              "blog": "fashions",
-              "show_border": true,
-              "post_des": "3",
-              "show_blog_title": "blog_tags",
-              "show_content": false,
-              "show_tags": false,
-              "show_author": true,
-              "show_comment": true,
-              "show_readmore": false,
-              "show_date": false,
-              "date": "%b %d",
-              "content_align": "start",
-              "limit": 8,
-              "img_effect": "none",
-              "b_effect": "none",
-              "image_ratio": "ratioadapt",
-              "image_size": "cover",
-              "image_position": "8",
-              "col_dk": "2",
-              "space_h_item": "30",
-              "space_v_item": "30",
-              "layout_des": "2",
-              "nav_btn": true,
-              "btn_vi": "always",
-              "btn_pos": "out",
-              "btn_owl": "default",
-              "btn_shape": "none",
-              "btn_cl": "light",
-              "btn_size": "small",
-              "btn_hidden_mobile": true,
-              "col": "7"
-            }
           }
         },
         "block_order": [
@@ -574,21 +368,7 @@
           "2e9073e3-6266-4206-adc2-d1bf151b6709",
           "96612a8b-551c-4d69-9dfc-efb2ff9a3ed0",
           "8e96a715-4063-4b78-9714-ebcd856bfe8c",
-          "a4c54021-02c1-4a38-b8d0-49df69581a85",
-          "fe9fa8f2-acb2-4594-98ac-34b684023811",
-          "50c3af4b-e0cc-415e-a70d-03dc5cbb1616",
-          "8fcf2d6d-0f71-4cd8-bb5c-bf323840bd1b",
-          "6765a368-76af-4fc3-97bf-1d4798edc6cd",
-          "4030ceda-2404-4a0f-9f66-f997d016db46",
-          "c7c18a38-8c7c-48b6-b072-54ae524dd26f",
-          "94326d23-02b9-4d12-bcba-a20f975d317e",
-          "34c5a608-2150-4270-87ef-7397b8cb67ff",
-          "62f2f1f9-7c03-4473-81bb-b5c4b4bf4513",
-          "a98310df-d436-4f3d-bf5b-e5e231777cb8",
-          "a9dd9f98-b46f-4e8d-bd6b-7ae3785ed104",
-          "cd9b0746-4c44-4d25-b4cb-6ac8419f69fe",
-          "6662331f-5bad-4833-a231-333460f7b959",
-          "1a6057a6-dada-44ab-93d9-24afc4bca54f"
+          "a4c54021-02c1-4a38-b8d0-49df69581a85"
         ],
         "settings": {
         }
