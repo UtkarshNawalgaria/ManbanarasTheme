@@ -10,7 +10,7 @@
             "image_position": "8",
             "cl_img": "",
             "link_img1": "",
-            "open_link": "_blank",
+            "open_link": "_self",
             "animate_slide": "none",
             "text_align": "start",
             "text_align_tb": "center",
@@ -41,33 +41,6 @@
             "br_pd_mb": 10,
             "time_animation": 1,
             "animation_delay": 40
-          }
-        },
-        "0b215b33-6be3-402c-bb59-21ad36dfada5": {
-          "type": "custom_text",
-          "settings": {
-            "text": "Mini<br>\nCollection",
-            "remove_br_tag": true,
-            "tag": "p",
-            "fontf": "inherit",
-            "text_cl": "#000000",
-            "text_fs": 60,
-            "text_lh": 72,
-            "text_fw": 300,
-            "text_ls": 0,
-            "mgb": 25,
-            "font_italic": false,
-            "text_shadow": false,
-            "text_fs_tb": 60,
-            "text_lh_tb": 70,
-            "text_ls_tb": 0,
-            "mgb_tb": 18,
-            "hidden_mobile": false,
-            "text_fs_mb": 40,
-            "text_lh_mb": 52,
-            "text_ls_mb": 0,
-            "mgb_mb": 20,
-            "animation": "fadeInDown"
           }
         },
         "fbdf53dd-b875-43a9-8fc4-32d7164972fa": {
@@ -364,7 +337,6 @@
       },
       "block_order": [
         "f9b8b909-6b31-45c2-b831-5b3090ac1662",
-        "0b215b33-6be3-402c-bb59-21ad36dfada5",
         "fbdf53dd-b875-43a9-8fc4-32d7164972fa",
         "440535d9-9a49-4462-a1a1-97c6cd77fd6e",
         "f9b8b909-6b31-45c2-b831-5b3090ac1663",
