@@ -12,8 +12,8 @@
     "logo_tr": "shopify:\/\/shop_images\/logo_w_47ebb230-b0e0-43eb-a57e-482ed7e37ca5.png",
     "only_icon": true,
     "text_color": "#000000",
-    "accent_color": "#d68130",
-    "secondary_color": "#b74d22",
+    "accent_color": "#b74d22",
+    "secondary_color": "#d68130",
     "border_color": "#e6e6e6",
     "price_primary": "#010101",
     "link_color_hover": "#b74d22",
@@ -31,6 +31,8 @@
     "enable_pr_ellipsis": false,
     "free_ship_pr": "adilette-slide-sandal",
     "gift_wrap_pr": "gift-wrap",
+    "link_ship": "shipping-policy",
+    "link_conditions": "terms",
     "filter_type_search": true,
     "show_search_suggest": true,
     "search_prs_suggest": "men",
@@ -205,8 +207,8 @@
               "mg_sub_hd": "SUB HEADING",
               "pos_sub": "bottom",
               "wid": "cus",
-              "cus_wid": 940,
-              "id": 3,
+              "cus_wid": 1280,
+              "id": 1,
               "enable_packery": true,
               "r_s_h_item": "30",
               "r_s_v_item": "0",
@@ -286,6 +288,53 @@
       },
       "mega-menu": {
         "type": "mega-menu",
+        "blocks": {
+          "845628da-c265-466b-ab7a-494dc36a813a": {
+            "type": "mega",
+            "settings": {
+              "id": 1
+            }
+          },
+          "d6366aff-b1bb-4aec-b3d5-db0ef14c206f": {
+            "type": "link",
+            "settings": {
+              "tt_hd": "Heading",
+              "use_bd": false,
+              "url": "",
+              "open_link": "_self",
+              "menu": "collections-list",
+              "item_fsize": 13,
+              "sp_bettewn_item": 20,
+              "col": "4"
+            }
+          },
+          "49debab5-0d69-47b6-aece-45daa9708569": {
+            "type": "banner",
+            "settings": {
+              "image_ratio": "ratioadapt",
+              "image_size": "cover",
+              "image_position": "8",
+              "height_dk": 400,
+              "img_effect": "none",
+              "b_effect": "none",
+              "b_link": "",
+              "open_link": "_self",
+              "html": "<h3 class=\"fs__30 mg__0 lh__1 cw mb__10\">lighting collections<\/h3><h4 class=\"fs__16 mg__0 cw\">Explorer<\/h4>",
+              "content_align": "center",
+              "cv_pos": 50,
+              "ch_pos": 50,
+              "cl_txt": "#ffffff",
+              "cl_overlay": "#000000",
+              "cl_opacity": 5,
+              "col": "4"
+            }
+          }
+        },
+        "block_order": [
+          "845628da-c265-466b-ab7a-494dc36a813a",
+          "d6366aff-b1bb-4aec-b3d5-db0ef14c206f",
+          "49debab5-0d69-47b6-aece-45daa9708569"
+        ],
         "settings": {
         }
       },
@@ -316,30 +365,18 @@
               "padding_inner_mb": "0"
             }
           },
-          "0e72965a-1528-4f80-8b68-b6e685a77755": {
-            "type": "custom_text",
+          "b2712926-ed44-4524-8b54-3dfd8ea1dda0": {
+            "type": "image",
             "settings": {
-              "text": "unsen.",
-              "remove_br_tag": false,
-              "tag": "p",
-              "fontf": "inherit",
-              "text_cl": "#000000",
-              "text_fs": 30,
-              "text_lh": 0,
-              "text_fw": 600,
-              "text_ls": 0,
-              "font_italic": false,
-              "text_shadow": false,
-              "mgb": 20,
-              "text_fs_tb": 30,
-              "text_lh_tb": 0,
-              "text_ls_tb": 0,
-              "mgb_tb": 20,
+              "image_child": "shopify:\/\/shop_images\/Manbanaras_Logo_f9501b7d-550e-4134-b346-7be004856607.png",
+              "img_width": 150,
+              "img_width_tb": 0,
+              "img_width_mb": 0,
+              "img_link": "",
               "hidden_mobile": false,
-              "text_fs_mb": 30,
-              "text_lh_mb": 0,
-              "text_ls_mb": 0,
-              "mgb_mb": 15
+              "mgb": 20,
+              "mgb_tb": 20,
+              "mgb_mb": 10
             }
           },
           "26810dab-1544-424e-a34f-328e03ff656f": {
@@ -375,29 +412,12 @@
               "hidden_mobile": false
             }
           },
-          "0b53ab19-2955-4327-a006-77e0b8d13a42": {
-            "type": "cus_socials",
-            "settings": {
-              "title": "",
-              "social_mode": "1",
-              "social_style": "simple",
-              "social_size": "large",
-              "bd_radius": 30,
-              "use_color_set": false,
-              "pri_cl": "#000000",
-              "pri_hover_cl": "#0ec1ae",
-              "space_h_item": "20",
-              "space_v_item": "5",
-              "space_h_item_mb": "20",
-              "space_v_item_mb": "4"
-            }
-          },
           "cd71528c-2a8b-4bda-a681-e50fd6c89e9e": {
             "type": "bl_col",
             "settings": {
-              "col_heading": "Customer Services",
+              "col_heading": "Policies",
               "col_border": false,
-              "menu": "",
+              "menu": "policy",
               "menu_style": "default",
               "space_item": 10,
               "space_item_tb": 10,
@@ -506,19 +526,36 @@
               "btn_hover_cl": "#0ec1ae",
               "border_cl": "#f1f1f1"
             }
+          },
+          "0b53ab19-2955-4327-a006-77e0b8d13a42": {
+            "type": "cus_socials",
+            "settings": {
+              "title": "",
+              "social_mode": "1",
+              "social_style": "simple",
+              "social_size": "large",
+              "bd_radius": 30,
+              "use_color_set": false,
+              "pri_cl": "#000000",
+              "pri_hover_cl": "#0ec1ae",
+              "space_h_item": "20",
+              "space_v_item": "5",
+              "space_h_item_mb": "20",
+              "space_v_item_mb": "4"
+            }
           }
         },
         "block_order": [
           "427b8062-6bfd-4a6a-bf25-39eaa55726be",
-          "0e72965a-1528-4f80-8b68-b6e685a77755",
+          "b2712926-ed44-4524-8b54-3dfd8ea1dda0",
           "26810dab-1544-424e-a34f-328e03ff656f",
           "ed0482b5-8e86-4484-acd6-c93607140ed9",
-          "0b53ab19-2955-4327-a006-77e0b8d13a42",
           "cd71528c-2a8b-4bda-a681-e50fd6c89e9e",
           "a164c3e1-b98d-498f-b30a-08e03d4fc2e5",
           "ff8dc3c0-cbf3-4df6-b2d2-24d0659d687e",
           "578e2a2d-6292-410a-9490-2622606cee05",
-          "e3bf8f09-81a7-4d4d-bb1f-c2258197165f"
+          "e3bf8f09-81a7-4d4d-bb1f-c2258197165f",
+          "0b53ab19-2955-4327-a006-77e0b8d13a42"
         ],
         "settings": {
           "hidden_footer": false,
