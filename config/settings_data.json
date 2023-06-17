@@ -232,7 +232,7 @@
           "f3e835fd-dbe6-4d94-885a-e0a6c0e4c154"
         ],
         "settings": {
-          "layout": "logo_center",
+          "layout": "logo_left",
           "full_header": false,
           "height": 80,
           "arrow": false,
@@ -303,7 +303,6 @@
           },
           "10c36dd8-9579-4b32-9578-0d5ffb00cf32": {
             "type": "mega",
-            "disabled": true,
             "settings": {
               "id": 2
             }
