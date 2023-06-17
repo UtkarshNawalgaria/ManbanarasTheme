@@ -4,12 +4,17 @@
     "general_layout": "custom",
     "cus_w_bd": 1440,
     "header_design": "inline",
-    "logo_svg": "https:\/\/cdn.shopify.com\/s\/files\/1\/0651\/3157\/7585\/files\/logo_black-Unsen.svg?v=1658817149",
+    "logo_svg": "",
+    "logo": "shopify:\/\/shop_images\/Manbanaras_Logo_f9501b7d-550e-4134-b346-7be004856607.png",
     "logo_tr_svg": "https:\/\/cdn.shopify.com\/s\/files\/1\/0651\/3157\/7585\/files\/logo_w_47ebb230-b0e0-43eb-a57e-482ed7e37ca5.png?v=1659521128",
     "logo_tr": "shopify:\/\/shop_images\/logo_w_47ebb230-b0e0-43eb-a57e-482ed7e37ca5.png",
     "only_icon": true,
+    "text_color": "#000000",
+    "accent_color": "#d68130",
+    "secondary_color": "#b74d22",
     "border_color": "#e6e6e6",
     "price_primary": "#010101",
+    "btn_bg": "#b74d22",
     "btn_radius": 0,
     "atc_ajax_enable": true,
     "wishlist_mode": "1",
@@ -181,52 +186,6 @@
       "header-inline": {
         "type": "header-inline",
         "blocks": {
-          "header-inline-0": {
-            "type": "mega",
-            "settings": {
-              "title": "DEMO",
-              "url": "",
-              "open_link": "_self",
-              "icon": "",
-              "cus_cl": false,
-              "cl": "#ec0101",
-              "lb": "",
-              "lb_cl": "#0ec1ae",
-              "use_sub_heading": false,
-              "mg_sub_hd": "SUB HEADING",
-              "pos_sub": "bottom",
-              "wid": "full",
-              "cus_wid": 1200,
-              "id": 1,
-              "enable_packery": true,
-              "r_s_h_item": "30",
-              "r_s_v_item": "30",
-              "padding_inner_bn": "30px,30px,30px,30px"
-            }
-          },
-          "header-inline-1": {
-            "type": "mega",
-            "settings": {
-              "title": "FEATURES",
-              "url": "",
-              "open_link": "_self",
-              "icon": "",
-              "cus_cl": false,
-              "cl": "#34c134",
-              "lb": "New",
-              "lb_cl": "#34c134",
-              "use_sub_heading": false,
-              "mg_sub_hd": "SUB HEADING",
-              "pos_sub": "bottom",
-              "wid": "cus",
-              "cus_wid": 860,
-              "id": 2,
-              "enable_packery": true,
-              "r_s_h_item": "30",
-              "r_s_v_item": "30",
-              "padding_inner_bn": "30px,30px,30px,30px"
-            }
-          },
           "70811116-77e4-478a-bdb3-8fbf6a3cf48b": {
             "type": "mega",
             "settings": {
@@ -249,96 +208,10 @@
               "r_s_v_item": "0",
               "padding_inner_bn": "30px,30px,30px,30px"
             }
-          },
-          "8808f705-af46-4a4a-8897-a275ba905baf": {
-            "type": "mega",
-            "settings": {
-              "title": "PRODUCTS",
-              "url": "shopify:\/\/collections\/all",
-              "open_link": "_self",
-              "icon": "",
-              "cus_cl": false,
-              "cl": "#ec0101",
-              "lb": "",
-              "lb_cl": "#0ec1ae",
-              "use_sub_heading": false,
-              "mg_sub_hd": "SUB HEADING",
-              "pos_sub": "bottom",
-              "wid": "cus",
-              "cus_wid": 1000,
-              "id": 4,
-              "enable_packery": true,
-              "r_s_h_item": "30",
-              "r_s_v_item": "30",
-              "padding_inner_bn": "30px,30px,30px,30px"
-            }
-          },
-          "41c9412a-ae00-4a29-ae03-b7517a38619c": {
-            "type": "mega",
-            "settings": {
-              "title": "BLOG",
-              "url": "shopify:\/\/blogs\/news",
-              "open_link": "_self",
-              "icon": "",
-              "cus_cl": false,
-              "cl": "#ec0101",
-              "lb": "",
-              "lb_cl": "#00badb",
-              "use_sub_heading": false,
-              "mg_sub_hd": "SUB HEADING",
-              "pos_sub": "bottom",
-              "wid": "cus",
-              "cus_wid": 860,
-              "id": 5,
-              "enable_packery": true,
-              "r_s_h_item": "30",
-              "r_s_v_item": "30",
-              "padding_inner_bn": "30px,30px,30px,30px"
-            }
-          },
-          "2e8f7af3-e1ac-4c34-986d-749936fe04a8": {
-            "type": "drop",
-            "settings": {
-              "title": "LOOKBOOK",
-              "url": "",
-              "open_link": "_self",
-              "menu": "",
-              "icon": "",
-              "cus_cl": false,
-              "cl": "#ec0101",
-              "lb": "",
-              "lb_cl": "",
-              "lazy_mn": true,
-              "pos_sub": "bottom",
-              "cus_wid": 268
-            }
-          },
-          "33913b92-e16c-45fc-954a-9ca9a0010059": {
-            "type": "drop",
-            "settings": {
-              "title": "PAGES",
-              "url": "",
-              "open_link": "_self",
-              "menu": "",
-              "icon": "",
-              "cus_cl": false,
-              "cl": "#ec0101",
-              "lb": "",
-              "lb_cl": "",
-              "lazy_mn": true,
-              "pos_sub": "bottom",
-              "cus_wid": 268
-            }
           }
         },
         "block_order": [
-          "header-inline-0",
-          "header-inline-1",
-          "70811116-77e4-478a-bdb3-8fbf6a3cf48b",
-          "8808f705-af46-4a4a-8897-a275ba905baf",
-          "41c9412a-ae00-4a29-ae03-b7517a38619c",
-          "2e8f7af3-e1ac-4c34-986d-749936fe04a8",
-          "33913b92-e16c-45fc-954a-9ca9a0010059"
+          "70811116-77e4-478a-bdb3-8fbf6a3cf48b"
         ],
         "settings": {
           "layout": "logo_left",
