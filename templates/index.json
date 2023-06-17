@@ -43,45 +43,6 @@
             "animation_delay": 40
           }
         },
-        "fbdf53dd-b875-43a9-8fc4-32d7164972fa": {
-          "type": "custom_button",
-          "settings": {
-            "button_text": "Shop Collection",
-            "button_link": "shopify:\/\/collections\/women",
-            "target_link": "_self",
-            "fontf": "inherit",
-            "button_style": "bordered",
-            "icon_style": "1",
-            "button_icon_w": 0,
-            "border_w": 2,
-            "button_effect": "rectangle-out",
-            "pri_cl": "#222222",
-            "second_cl": "#ffffff",
-            "pri_cl_hover": "#0ec1ae",
-            "second_cl_hover": "#ffffff",
-            "fsbutton": 14,
-            "fwbutton": 400,
-            "button_ls": 0,
-            "button_mh": 32,
-            "button_bdr": 0,
-            "button_pd_lr": 0,
-            "mgb": 195,
-            "button_icon_w_tb": 0,
-            "fsbutton_tb": 14,
-            "button_mh_tb": 32,
-            "button_pd_lr_tb": 0,
-            "button_ls_tb": 0,
-            "mgb_tb": 100,
-            "hidden_mobile": false,
-            "button_icon_w_mb": 0,
-            "fsbutton_mb": 14,
-            "button_mh_mb": 32,
-            "button_pd_lr_mb": 0,
-            "button_ls_mb": 0,
-            "mgb_mb": 30,
-            "animation": "fadeInLeft"
-          }
-        },
         "440535d9-9a49-4462-a1a1-97c6cd77fd6e": {
           "type": "pr_simple",
           "settings": {
@@ -337,7 +298,6 @@
       },
       "block_order": [
         "f9b8b909-6b31-45c2-b831-5b3090ac1662",
-        "fbdf53dd-b875-43a9-8fc4-32d7164972fa",
         "440535d9-9a49-4462-a1a1-97c6cd77fd6e",
         "f9b8b909-6b31-45c2-b831-5b3090ac1663",
         "0b215b33-6be3-402c-bb59-21ad36dfada4",
