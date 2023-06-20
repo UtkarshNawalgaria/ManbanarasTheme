@@ -89,9 +89,9 @@
         "f9b8b909-6b31-45c2-b831-5b3090ac1663"
       ],
       "settings": {
-        "se_height": "t4s_ratio_cuspx",
+        "se_height": "t4s_ratioadapt_f_mix",
         "custom_dk": true,
-        "height_dk": 775,
+        "height_dk": 600,
         "custom_tb": true,
         "height_tb": 600,
         "custom_mb": true,
