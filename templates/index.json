@@ -6,7 +6,8 @@
         "f9b8b909-6b31-45c2-b831-5b3090ac1662": {
           "type": "image_parent",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Divine_Manbanaras_Banner_1.jpg",
+            "image": "shopify:\/\/shop_images\/1.png",
+            "image_mb": "shopify:\/\/shop_images\/1_c5b62e38-c018-4bb7-921a-8436e6655bd9.png",
             "image_position": "8",
             "cl_img": "",
             "link_img1": "",
@@ -46,7 +47,8 @@
         "f9b8b909-6b31-45c2-b831-5b3090ac1663": {
           "type": "image_parent",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Divine_Manbanaras_Banner_2.jpg",
+            "image": "shopify:\/\/shop_images\/2.png",
+            "image_mb": "shopify:\/\/shop_images\/2_82090a76-9c1b-4eef-a302-6f34f3f26ad4.png",
             "image_position": "8",
             "cl_img": "",
             "link_img1": "",
@@ -89,9 +91,9 @@
         "f9b8b909-6b31-45c2-b831-5b3090ac1663"
       ],
       "settings": {
-        "se_height": "t4s_ratio_cuspx",
+        "se_height": "t4s_ratioadapt_f_mix",
         "custom_dk": true,
-        "height_dk": 775,
+        "height_dk": 750,
         "custom_tb": true,
         "height_tb": 600,
         "custom_mb": true,
@@ -106,10 +108,10 @@
         "au_hover": true,
         "nav_btn": true,
         "btn_distance": 20,
-        "nav_btn_icon": "default",
-        "btn_pos": "default",
+        "nav_btn_icon": "1",
+        "btn_pos": "vertical",
         "btn_vi": "always",
-        "btn_owl": "outline",
+        "btn_owl": "simple",
         "btn_shape": "round",
         "btn_cl": "dark",
         "btn_size": "small",
