@@ -10,7 +10,6 @@
     "logos_width": 150,
     "logo_tr_svg": "https:\/\/cdn.shopify.com\/s\/files\/1\/0651\/3157\/7585\/files\/logo_w_47ebb230-b0e0-43eb-a57e-482ed7e37ca5.png?v=1659521128",
     "logo_tr": "shopify:\/\/shop_images\/logo_w_47ebb230-b0e0-43eb-a57e-482ed7e37ca5.png",
-    "mobile_nav_type": "1",
     "only_icon": true,
     "text_color": "#000000",
     "accent_color": "#b74d22",
@@ -19,7 +18,6 @@
     "price_primary": "#010101",
     "link_color_hover": "#b74d22",
     "btn_bg": "#b74d22",
-    "cl_lazyload": "#b74d22",
     "btn_radius": 0,
     "btn_radius2": 5,
     "atc_ajax_enable": true,
@@ -51,11 +49,6 @@
     "social_pinterest_link": "https:\/\/pinterest.com\/shopify",
     "social_youtube_link": "",
     "favicon": "shopify:\/\/shop_images\/z3594756212370_c53fe46b351a211cca86ae67b01d3595.jpg",
-    "checkout_logo_image": "shopify:\/\/shop_images\/Manbanaras_Logo_f9501b7d-550e-4134-b346-7be004856607.png",
-    "checkout_logo_position": "center",
-    "checkout_logo_size": "medium",
-    "checkout_accent_color": "#b74d22",
-    "checkout_button_color": "#b74d22",
     "custom_css": true,
     "favicon_apple": "shopify:\/\/shop_images\/z3594756212370_c53fe46b351a211cca86ae67b01d3595.jpg",
     "sections": {
@@ -199,7 +192,7 @@
       "header-inline": {
         "type": "header-inline",
         "blocks": {
-          "43ae809f-ada4-4fbf-b7b5-82a9b877e9d0": {
+          "70811116-77e4-478a-bdb3-8fbf6a3cf48b": {
             "type": "mega",
             "settings": {
               "title": "UNSTITCHED SUITS",
@@ -207,18 +200,18 @@
               "open_link": "_self",
               "icon": "",
               "cus_cl": false,
-              "cl": "#ec0101",
+              "cl": "#ff3a3a",
               "lb": "",
-              "lb_cl": "#00badb",
+              "lb_cl": "#ff3a3a",
               "use_sub_heading": false,
               "mg_sub_hd": "SUB HEADING",
               "pos_sub": "bottom",
               "wid": "cus",
-              "cus_wid": 800,
+              "cus_wid": 1280,
               "id": 1,
-              "enable_packery": false,
-              "r_s_h_item": "20",
-              "r_s_v_item": "30",
+              "enable_packery": true,
+              "r_s_h_item": "30",
+              "r_s_v_item": "0",
               "padding_inner_bn": "30px,30px,30px,30px"
             }
           },
@@ -234,25 +227,11 @@
               "lb": "",
               "lb_cl": ""
             }
-          },
-          "dcb67975-4794-4566-a033-fa9ffc0cec32": {
-            "type": "base",
-            "settings": {
-              "title": "ABOUT US",
-              "url": "shopify:\/\/pages\/about-us",
-              "open_link": "_self",
-              "icon": "",
-              "cus_cl": false,
-              "cl": "#ec0101",
-              "lb": "",
-              "lb_cl": ""
-            }
           }
         },
         "block_order": [
-          "43ae809f-ada4-4fbf-b7b5-82a9b877e9d0",
-          "f3e835fd-dbe6-4d94-885a-e0a6c0e4c154",
-          "dcb67975-4794-4566-a033-fa9ffc0cec32"
+          "70811116-77e4-478a-bdb3-8fbf6a3cf48b",
+          "f3e835fd-dbe6-4d94-885a-e0a6c0e4c154"
         ],
         "settings": {
           "layout": "logo_left",
@@ -267,7 +246,7 @@
           "bgnav": "#ffffff",
           "opnav": 100,
           "clnav": "#000000",
-          "clnav_hover": "#b74d22",
+          "clnav_hover": "#2aadc5",
           "show_border": false,
           "bd_cl": "#000000",
           "h_icon": "unsen",
@@ -316,37 +295,45 @@
               "id": 1
             }
           },
-          "996438dd-78f1-4b96-82cb-4f68f3ce6a30": {
+          "d6366aff-b1bb-4aec-b3d5-db0ef14c206f": {
             "type": "link",
             "settings": {
-              "tt_hd": "By Fabric",
-              "use_bd": true,
+              "tt_hd": "Heading",
+              "use_bd": false,
               "url": "",
               "open_link": "_self",
               "menu": "collections-list",
               "item_fsize": 13,
               "sp_bettewn_item": 20,
-              "col": "6"
+              "col": "4"
             }
           },
-          "ae5d1c57-6fa9-4e51-81e2-9b9ad4a6378e": {
-            "type": "link",
+          "49debab5-0d69-47b6-aece-45daa9708569": {
+            "type": "banner",
             "settings": {
-              "tt_hd": "By Occasion",
-              "use_bd": true,
-              "url": "",
+              "image_ratio": "ratioadapt",
+              "image_size": "cover",
+              "image_position": "8",
+              "height_dk": 400,
+              "img_effect": "none",
+              "b_effect": "none",
+              "b_link": "",
               "open_link": "_self",
-              "menu": "by-occasion",
-              "item_fsize": 13,
-              "sp_bettewn_item": 20,
-              "col": "6"
+              "html": "<h3 class=\"fs__30 mg__0 lh__1 cw mb__10\">lighting collections<\/h3><h4 class=\"fs__16 mg__0 cw\">Explorer<\/h4>",
+              "content_align": "center",
+              "cv_pos": 50,
+              "ch_pos": 50,
+              "cl_txt": "#ffffff",
+              "cl_overlay": "#000000",
+              "cl_opacity": 5,
+              "col": "4"
             }
           }
         },
         "block_order": [
           "845628da-c265-466b-ab7a-494dc36a813a",
-          "996438dd-78f1-4b96-82cb-4f68f3ce6a30",
-          "ae5d1c57-6fa9-4e51-81e2-9b9ad4a6378e"
+          "d6366aff-b1bb-4aec-b3d5-db0ef14c206f",
+          "49debab5-0d69-47b6-aece-45daa9708569"
         ],
         "settings": {
         }
@@ -947,7 +934,7 @@
           "c7bc461d-6171-4edf-bd73-05879a52216f"
         ],
         "settings": {
-          "tabs_list": "wishlist, cart",
+          "tabs_list": "best_seller, wishlist, visited, cart",
           "product_list": [
             "adilette-slide-sandal",
             "adilette-slide-sandal-colorful",
@@ -967,7 +954,7 @@
           "enable_rates": true,
           "enable_discount": true,
           "enable_gift_wrap": true,
-          "ship_df_country": "India"
+          "ship_df_country": "United States"
         }
       },
       "main-qv": {
@@ -1163,6 +1150,12 @@
               "title": "Home"
             }
           },
+          "9c8f0417-348e-4388-9d59-c28103a48372": {
+            "type": "nav",
+            "settings": {
+              "title": "Menu"
+            }
+          },
           "c243ff5d-c00d-4af1-a110-d74a4cdb8a74": {
             "type": "shop",
             "settings": {
@@ -1191,6 +1184,7 @@
         },
         "block_order": [
           "363a442e-2da6-4d11-8264-daebc8ef1674",
+          "9c8f0417-348e-4388-9d59-c28103a48372",
           "c243ff5d-c00d-4af1-a110-d74a4cdb8a74",
           "ea5e77c0-b7d2-4249-8427-6f2432b3bf99",
           "d7e81cd1-b0f0-4abc-a857-30f2491a64d7",
@@ -1232,7 +1226,7 @@
               ],
               "mb": false,
               "index": true,
-              "product": true,
+              "product": false,
               "collection": false,
               "article": false,
               "blog": false,
@@ -2532,14 +2526,6 @@
     },
     "content_for_index": [
 
-    ],
-    "blocks": {
-      "judgeme_core_659b4bb6": {
-        "type": "shopify:\/\/apps\/judge-me-product-reviews\/blocks\/judgeme_core\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-        "disabled": false,
-        "settings": {
-        }
-      }
-    }
+    ]
   }
 }
