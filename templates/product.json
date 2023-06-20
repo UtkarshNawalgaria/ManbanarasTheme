@@ -186,9 +186,9 @@
       "settings": {
         "pr_layout": "default",
         "enable_sticky_info": true,
-        "enable_space_content": true,
+        "enable_space_content": false,
         "media_layout": "thumbnails_left",
-        "media_size": "large",
+        "media_size": "medium",
         "thumb_lr_size": "medium",
         "thumb_lr_hover": "1",
         "image_ratio": "ratioadapt",
