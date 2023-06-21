@@ -5,7 +5,7 @@
     "theme_version": "1.6",
     "theme_author": "Utkarsh Nawalgaria",
     "theme_documentation_url": "https:\/\/docs.the4.co\/unsen\/",
-    "theme_support_url": "https://www.shopifybuddy.co"
+    "theme_support_url": "https:\/\/www.shopifybuddy.co"
   },
   {
     "name": "Dear customers!",
@@ -218,7 +218,7 @@
       },
       {
         "type": "paragraph",
-        "content": "Recommend app: [AVADA SEO](https://apps.shopify.com/avada-seo-suite?utm_source=The4&utm_medium=inapp&utm_campaign=partnership)"
+        "content": "Recommend app: [AVADA SEO](https:\/\/apps.shopify.com\/avada-seo-suite?utm_source=The4&utm_medium=inapp&utm_campaign=partnership)"
       },
       {
         "type": "textarea",
@@ -597,12 +597,6 @@
         "label": "Secondary",
         "default": "#000000"
       },
-      /*{
-        "type": "color",
-        "id": "loading_bar_color",
-        "label": "Loading Bar",
-        "default": "#00BADB"
-      },*/
       {
         "type": "color",
         "id": "border_color",
@@ -2553,16 +2547,6 @@
   {
     "name": "Social Media",
     "settings": [
-      /*{
-        "type": "header",
-        "content": "Social sharing image"
-      },
-      {
-        "type": "image_picker",
-        "id": "share_image",
-        "label": "Image",
-        "info": "Shown when sharing a link on social media. [Learn more](https:\/\/help.shopify.com\/en\/manual\/using-themes\/troubleshooting\/showing-social-media-thumbnail-images\/) about image thumbnails."
-      },*/
       {
         "type": "header",
         "content": "Social sharing options"
