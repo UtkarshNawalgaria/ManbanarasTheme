@@ -375,7 +375,7 @@
         "head_button_effect": "sweep-to-right",
         "hidden_btn_mb": false,
         "head_slide_btn": false,
-        "layout": "stretch",
+        "layout": "t4s-se-container",
         "cl_bg": "",
         "cl_bg_gradient": "",
         "mg": ",,70px,",
