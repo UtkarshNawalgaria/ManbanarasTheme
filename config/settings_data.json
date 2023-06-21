@@ -208,7 +208,7 @@
               "mg_sub_hd": "SUB HEADING",
               "pos_sub": "bottom",
               "wid": "cus",
-              "cus_wid": 1280,
+              "cus_wid": 800,
               "id": 1,
               "enable_packery": true,
               "r_s_h_item": "30",
@@ -306,35 +306,27 @@
               "menu": "collections-list",
               "item_fsize": 13,
               "sp_bettewn_item": 20,
-              "col": "4"
+              "col": "6"
             }
           },
-          "49debab5-0d69-47b6-aece-45daa9708569": {
-            "type": "banner",
+          "0dad00b3-ab35-4161-8e4f-c60ff6ca2f7c": {
+            "type": "link",
             "settings": {
-              "image_ratio": "ratioadapt",
-              "image_size": "cover",
-              "image_position": "8",
-              "height_dk": 400,
-              "img_effect": "none",
-              "b_effect": "none",
-              "b_link": "",
+              "tt_hd": "By Occasion",
+              "use_bd": true,
+              "url": "",
               "open_link": "_self",
-              "html": "<h3 class=\"fs__30 mg__0 lh__1 cw mb__10\">lighting collections<\/h3><h4 class=\"fs__16 mg__0 cw\">Explorer<\/h4>",
-              "content_align": "center",
-              "cv_pos": 50,
-              "ch_pos": 50,
-              "cl_txt": "#ffffff",
-              "cl_overlay": "#000000",
-              "cl_opacity": 5,
-              "col": "4"
+              "menu": "by-occasion",
+              "item_fsize": 13,
+              "sp_bettewn_item": 20,
+              "col": "6"
             }
           }
         },
         "block_order": [
           "845628da-c265-466b-ab7a-494dc36a813a",
           "d6366aff-b1bb-4aec-b3d5-db0ef14c206f",
-          "49debab5-0d69-47b6-aece-45daa9708569"
+          "0dad00b3-ab35-4161-8e4f-c60ff6ca2f7c"
         ],
         "settings": {
         }
