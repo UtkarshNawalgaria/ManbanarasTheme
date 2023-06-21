@@ -840,7 +840,7 @@
         "title_active_cl": "#000000",
         "bg_title_active_cl": "",
         "content_align": "default",
-        "auto_active": true,
+        "auto_active": false,
         "layout": "t4s-cus-width",
         "custom_width": 800,
         "cl_bg": "",
