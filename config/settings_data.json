@@ -594,78 +594,13 @@
       "mb_nav": {
         "type": "mb_nav",
         "blocks": {
-          "mb_nav-0": {
+          "3cb4046a-6f21-457e-a630-b51f1bd22a15": {
             "type": "menu",
             "settings": {
-              "title": "Fashion",
+              "title": "Unstitched Suits By Fabric",
               "url": "",
               "open_link": "_self",
-              "menu": "",
-              "lb": "",
-              "lb_cl": "",
-              "icons_op": "2",
-              "icon": ""
-            }
-          },
-          "mb_nav-1": {
-            "type": "menu",
-            "settings": {
-              "title": "Furniture",
-              "url": "",
-              "open_link": "_self",
-              "menu": "",
-              "lb": "",
-              "lb_cl": "",
-              "icons_op": "2",
-              "icon": ""
-            }
-          },
-          "mb_nav-2": {
-            "type": "menu",
-            "settings": {
-              "title": "Cosmetic",
-              "url": "",
-              "open_link": "_self",
-              "menu": "",
-              "lb": "",
-              "lb_cl": "",
-              "icons_op": "2",
-              "icon": ""
-            }
-          },
-          "mb_nav-3": {
-            "type": "menu",
-            "settings": {
-              "title": "Electronic",
-              "url": "",
-              "open_link": "_self",
-              "menu": "",
-              "lb": "",
-              "lb_cl": "",
-              "icons_op": "2",
-              "icon": ""
-            }
-          },
-          "ed1da93d-443d-4396-8349-4310bb9e3759": {
-            "type": "menu",
-            "settings": {
-              "title": "Glasses",
-              "url": "",
-              "open_link": "_self",
-              "menu": "",
-              "lb": "",
-              "lb_cl": "",
-              "icons_op": "2",
-              "icon": ""
-            }
-          },
-          "ae632f75-29eb-4e03-ade6-6887abca3eb9": {
-            "type": "menu",
-            "settings": {
-              "title": "Jewelry",
-              "url": "",
-              "open_link": "_self",
-              "menu": "",
+              "menu": "collections-list",
               "lb": "",
               "lb_cl": "",
               "icons_op": "2",
@@ -696,12 +631,7 @@
           }
         },
         "block_order": [
-          "mb_nav-0",
-          "mb_nav-1",
-          "mb_nav-2",
-          "mb_nav-3",
-          "ed1da93d-443d-4396-8349-4310bb9e3759",
-          "ae632f75-29eb-4e03-ade6-6887abca3eb9",
+          "3cb4046a-6f21-457e-a630-b51f1bd22a15",
           "mb_nav-4",
           "mb_nav-5",
           "mb_nav-6",
