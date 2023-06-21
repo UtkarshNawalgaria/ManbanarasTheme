@@ -55,6 +55,8 @@
     "checkout_logo_image": "shopify:\/\/shop_images\/Transparent_Logo.png",
     "checkout_logo_position": "center",
     "checkout_logo_size": "medium",
+    "checkout_accent_color": "#d68130",
+    "checkout_button_color": "#d68130",
     "custom_css": true,
     "favicon_apple": "shopify:\/\/shop_images\/z3594756212370_c53fe46b351a211cca86ae67b01d3595.jpg",
     "sections": {
