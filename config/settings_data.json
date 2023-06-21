@@ -597,10 +597,10 @@
           "3cb4046a-6f21-457e-a630-b51f1bd22a15": {
             "type": "menu",
             "settings": {
-              "title": "Unstitched Suits By Fabric",
+              "title": "Unstitched Suits",
               "url": "",
               "open_link": "_self",
-              "menu": "collections-list",
+              "menu": "mobile-menu",
               "lb": "",
               "lb_cl": "",
               "icons_op": "2",
