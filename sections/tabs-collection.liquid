@@ -12,7 +12,7 @@
   else
     assign html_layout = '__' | split: '__'
   endif
-  
+
   assign head_bigger = se_stts.head_bigger
   if head_bigger
     assign html_head = '<div class="t4s-container-fluid">__</div>' | split: '__'
@@ -30,13 +30,13 @@
   endif
 
   assign tabs_des = se_stts.tabs_des
-  assign title_inline = se_stts.title_inline 
+  assign title_inline = se_stts.title_inline
   assign tabs_pos = se_stts.tabs_pos
   
   assign use_link_vendor = settings.use_link_vendor
 
- 
- -%} 
+
+ -%}
 {{ 'section.css' | asset_url | stylesheet_tag }}
 {{ 'top-head.css' | asset_url | stylesheet_tag }}
 {{ 'tabs-collection.css' | asset_url | stylesheet_tag }}
@@ -46,7 +46,7 @@
 <link rel="stylesheet" href="{{ 'base_drop.min.css' | asset_url }}" media="all">
 <link href="{{ 'loading.css' | asset_url }}" rel="stylesheet" media="print" onload="this.media='all'">
 {%- if current_tags contains 'ntt4tag' and current_tags -%}
-  {%- assign num_i = current_tags[0] | remove: '_bid' | plus: 0 -%} 
+  {%- assign num_i = current_tags[0] | remove: '_bid' | plus: 0 -%}
   {%- assign block = section.blocks[num_i] -%}
   {%- assign collection = collections[block.settings.collection] -%}
   {%- render 'inc_tab',ck_q: false,section: section,se_stts: se_stts,sid: sid,collection: collection, block: block,se_stts: se_stts,arrow_icon: arrow_icon, use_link_vendor: use_link_vendor -%}
@@ -92,7 +92,7 @@
                       <li class="t4s-tab-item t4s-d-inline-flex {%- if image != blank %} t4s-has-img-title {% endif -%}">
                         <a id="b_{{ block.id }}" href="#t4s-{{ blockid }}" rel="nofollow" data-t4s-tab-item data-no-instant {{ block.shopify_attributes }} {% if forloop.first == true %} class="t4s-active" {% endif %} data-dropdown-item data-sortby-item>
                         <span>
-                          {% if icon_title != blank %}  
+                          {% if icon_title != blank %}
                             <span class="t4s-icon-title"><i class="{{ icon_title }}"></i></span>
                           {% elsif bk_stts.image_title != blank %}
                             <span class="t4s-image-title">
@@ -148,7 +148,7 @@
         {{- html_layout[1] -}}
       </div>
     </div>
-    
+
 </div>
 {%- endif -%}
 {% schema %}
@@ -366,7 +366,7 @@
         "step": 1,
         "default": 30,
         "unit": "px",
-        "info": "Set '0' to use default"            
+        "info": "Set '0' to use default"
       },
       {
         "type": "range",
@@ -416,7 +416,7 @@
         "type": "color",
         "id": "secon_active_cl",
         "default": "#868686",
-        "label": "Secondary active color"      
+        "label": "Secondary active color"
       },
       {
         "type": "range",
@@ -820,7 +820,7 @@
             "label": "Show product countdown",
             "default": false
           },
-          
+
           {
             "type": "checkbox",
             "id": "featured_items",
@@ -1079,27 +1079,27 @@
             "id": "space_h_item",
             "options": [
               {
-                  "value": "0", 
+                  "value": "0",
                   "label": "0"
               },
               {
-                  "value": "2", 
+                  "value": "2",
                   "label": "2px"
               },
               {
-                  "value": "4", 
+                  "value": "4",
                   "label": "4px"
               },
               {
-                  "value": "6", 
+                  "value": "6",
                   "label": "6px"
               },
               {
-                  "value": "8", 
+                  "value": "8",
                   "label": "8px"
               },
               {
-                  "value": "10", 
+                  "value": "10",
                   "label": "10px"
               },
               {
@@ -1135,27 +1135,27 @@
             "id": "space_v_item",
             "options": [
               {
-                  "value": "0", 
+                  "value": "0",
                   "label": "0"
               },
               {
-                  "value": "2", 
+                  "value": "2",
                   "label": "2px"
               },
               {
-                  "value": "4", 
+                  "value": "4",
                   "label": "4px"
               },
               {
-                  "value": "6", 
+                  "value": "6",
                   "label": "6px"
               },
               {
-                  "value": "8", 
+                  "value": "8",
                   "label": "8px"
               },
               {
-                  "value": "10", 
+                  "value": "10",
                   "label": "10px"
               },
               {
@@ -1187,27 +1187,27 @@
             "id": "space_h_item_tb",
             "options": [
               {
-                  "value": "0", 
+                  "value": "0",
                   "label": "0"
               },
               {
-                  "value": "2", 
+                  "value": "2",
                   "label": "2px"
               },
               {
-                  "value": "4", 
+                  "value": "4",
                   "label": "4px"
               },
               {
-                  "value": "6", 
+                  "value": "6",
                   "label": "6px"
               },
               {
-                  "value": "8", 
+                  "value": "8",
                   "label": "8px"
               },
               {
-                  "value": "10", 
+                  "value": "10",
                   "label": "10px"
               },
               {
@@ -1235,27 +1235,27 @@
             "id": "space_v_item_tb",
             "options": [
               {
-                  "value": "0", 
+                  "value": "0",
                   "label": "0"
               },
               {
-                  "value": "2", 
+                  "value": "2",
                   "label": "2px"
               },
               {
-                  "value": "4", 
+                  "value": "4",
                   "label": "4px"
               },
               {
-                  "value": "6", 
+                  "value": "6",
                   "label": "6px"
               },
               {
-                  "value": "8", 
+                  "value": "8",
                   "label": "8px"
               },
               {
-                  "value": "10", 
+                  "value": "10",
                   "label": "10px"
               },
               {
@@ -1283,27 +1283,27 @@
             "id": "space_h_item_mb",
             "options": [
               {
-                  "value": "0", 
+                  "value": "0",
                   "label": "0"
               },
               {
-                  "value": "2", 
+                  "value": "2",
                   "label": "2px"
               },
               {
-                  "value": "4", 
+                  "value": "4",
                   "label": "4px"
               },
               {
-                  "value": "6", 
+                  "value": "6",
                   "label": "6px"
               },
               {
-                  "value": "8", 
+                  "value": "8",
                   "label": "8px"
               },
               {
-                  "value": "10", 
+                  "value": "10",
                   "label": "10px"
               },
               {
@@ -1331,27 +1331,27 @@
             "id": "space_v_item_mb",
             "options": [
               {
-                  "value": "0", 
+                  "value": "0",
                   "label": "0"
               },
               {
-                  "value": "2", 
+                  "value": "2",
                   "label": "2px"
               },
               {
-                  "value": "4", 
+                  "value": "4",
                   "label": "4px"
               },
               {
-                  "value": "6", 
+                  "value": "6",
                   "label": "6px"
               },
               {
-                  "value": "8", 
+                  "value": "8",
                   "label": "8px"
               },
               {
-                  "value": "10", 
+                  "value": "10",
                   "label": "10px"
               },
               {
@@ -1690,7 +1690,7 @@
               "id": "dots_hidden_mobile",
               "label": "Hidden dots on mobile ",
               "default": false
-          }, 
+          },
           {
             "type": "header",
             "content": "+Options for grid or masonry layout"
