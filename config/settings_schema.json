@@ -1,33 +1,11 @@
 [
   {
     "name": "theme_info",
-    "theme_name": "Unsen",
+    "theme_name": "Divine Manbanaras Live Theme",
     "theme_version": "1.6",
-    "theme_author": "The4",
+    "theme_author": "Utkarsh Nawalgaria",
     "theme_documentation_url": "https:\/\/docs.the4.co\/unsen\/",
-    "theme_support_url": "https:\/\/support.the4.co\/"
-  },
-  {
-    "name": "Theme active",
-    "settings": [
-      {
-        "type": "paragraph",
-        "content": "Start your business journey with Unsen"
-      },
-      {
-        "type": "text",
-        "id": "purchase_code",
-        "label": "Purchase code"
-      },
-      {
-        "type": "paragraph",
-        "content": "[Where is my purchase code](https:\/\/help.market.envato.com\/hc\/en-us\/articles\/202822600-Where-Is-My-Purchase-Code-) [Buy a new license](https:\/\/bit.ly\/3lST9WX) [Get EComposer Page Builder for Free (only The4'users)](https:\/\/apps.shopify.com\/ecomposer?utm_source=unsen&utm_medium=activate-unsen-sidebar)"
-      },
-      {
-        "type": "paragraph",
-        "content": "Use Unsen and explore all the tools and services you need to start, run, and grow your business. Even more better that Unsen will make your business easier by improving your workflow. With the tools and features that Unsen gives you, you will realize your true design potential without any knowledge of coding. We would be glad if you help us to improve our theme, installation process or documentation."
-      }
-    ]
+    "theme_support_url": "https://www.shopifybuddy.co"
   },
   {
     "name": "Dear customers!",

@@ -1,6 +1,6 @@
 {%- if section.settings.show_announcement -%}
   {%- liquid
-    assign theme_name = 'unsen'
+    assign theme_name = 'divine_manbanaras'
     assign se_stts = section.settings
     assign stt_image_bg = se_stts.image_bg
     assign padding_section = se_stts.pd | remove: ' ' | split: ',' -%}
@@ -20,7 +20,7 @@
     svg.t4s-icon-arrow {
       width: 12px;display: inline-block;
     }
-    .t4s-announcement-bar__item .t4s-icon-arrow { 
+    .t4s-announcement-bar__item .t4s-icon-arrow {
       -webkit-transition: .2s ease-in-out;
       transition: -webkit-transform .2s ease-in-out,transform .2s ease-in-out;
     }
@@ -46,7 +46,7 @@
   <div aria-hidden="false" id="t4s-announcement-main" class="t4s-announcement-bar t4s-pr t4s-oh t4s-type-close-{{ se_stts.close }} {%- if stt_image_bg != blank -%} t4s-has-imgbg lazyloadt4s {%- endif -%}" data-ver='{{ se_stts.version }}_nt' data-date='{{ se_stts.date }}' {%- if stt_image_bg != blank -%} data-bgset="{{ stt_image_bg | image_url: width: 1 }}" data-sizes="auto"  data-optimumx="1.5" {%- endif -%}  style="--pd-top: {{ padding_section[0] | default: "0px" }};--pd-right: {{ padding_section[1] | default: "0px" }};--pd-bottom: {{ padding_section[2] | default: "0px" }};--pd-left: {{ padding_section[3] | default: "0px" }};">
     <div class="t4s-container">
        <div class="t4s-row t4s-gx-0 t4s-flex-nowrap t4s-align-items-center">
-          
+
           {{- cap_btn -}}
 
           {%- if section.blocks.size > 0 -%}
@@ -67,10 +67,10 @@
                       <span class="t4s-announcement-icon__img t4s-d-inline-block t4s-pr">
                         <img class="" src="{{ image | image_url: width: 50 }}" width="{{ image.width }}" height="{{ image.height }}" alt="{{ image.alt }}" loading="lazy">
                       </span>
-                    {% endif -%} 
+                    {% endif -%}
                   {%- endcapture -%}
                   {%- capture cap_date %}{% assign se_dayx = bk_stts.dayx %}<span data-refresh-owl data-countdown-t4s data-loop="{% if se_dayx > 0 %}true{% else %}false{% endif %}" data-date="{{ bk_stts.countdown }}" data-dayl="{{ se_dayx }}">{{ cap_date_ct }}</span>{% endcapture -%}
-                  <div id="b_{{ block.id }}" {{ block.shopify_attributes }} data-select-flickity class="t4s-col-item t4s-announcement-bar__item t4s-pr t4s-oh t4s-btn-link-{{ bk_stts.btn_link_layout }}" style="--bg-cd: {{ bk_stts.bg_cd }};--cl-cd: {{ bk_stts.cl_cd }};--bg-btn: {{ bk_stts.bg_btn }};--cl-btn: {{ bk_stts.cl_btn }};"> 
+                  <div id="b_{{ block.id }}" {{ block.shopify_attributes }} data-select-flickity class="t4s-col-item t4s-announcement-bar__item t4s-pr t4s-oh t4s-btn-link-{{ bk_stts.btn_link_layout }}" style="--bg-cd: {{ bk_stts.bg_cd }};--cl-cd: {{ bk_stts.cl_cd }};--bg-btn: {{ bk_stts.bg_btn }};--cl-btn: {{ bk_stts.cl_btn }};">
                     {{- bk_stts.content | replace: '[icon]', cap_icon | replace: '[countdown]', cap_date | replace: '[icon_arrow]', cap_arrow -}}
                   </div>
                {%- endfor -%}
@@ -79,7 +79,7 @@
 
           {{- cap_btn | replace: 't4s-op-0', 't4s-z-100' | remove: ' t4s-d-none t4s-d-md-block' -}}
        </div>
-    </div> 
+    </div>
   </div>
   <script>try { if (document.cookie.indexOf('t4s_announcement_{{theme_name}}_{{ se_stts.version }}_nt') > -1) { document.getElementById('shopify-section-announcement-bar').setAttribute("aria-hidden", true);document.getElementsByClassName('t4s-announcement-bar')[0].setAttribute("aria-hidden", true);document.getElementsByClassName('t4s-announcement-bar')[0].classList.add('t4s-d-none'); } else {document.documentElement.style.setProperty('--announcement-height2', document.getElementById('t4s-announcement-main').offsetHeight + 'px');} }catch(err) {}</script>
 {%- else -%}
@@ -184,7 +184,7 @@
       {
         "type": "image_picker",
         "id": "image_bg",
-        "label": "Background image" 
+        "label": "Background image"
       },
       {
         "type": "select",
@@ -216,7 +216,7 @@
         "label": "Button close color",
         "default": "#fff"
       },
-      
+
       {
         "type": "radio",
         "id": "version",
@@ -265,14 +265,14 @@
           "name": "Announcement",
           "limit": 10,
           "settings": [
-            
+
             {
               "type": "richtext",
               "id": "content",
               "label": "Banner content",
               "default": "<p>Today deal sale off 70%. End in [countdown]. Hurry Up!! [icon_arrow]</p>",
               "info": "Place here text you want to see in the header banner. You can use shortcodes:[icon], [countdown], [icon_arrow]"
-            }, 
+            },
             {
               "type": "header",
               "content":"[icon]"
