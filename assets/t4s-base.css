@@ -4772,3 +4772,8 @@ blockquote small{
       max-width: 100%;
   }
 }
+
+#insta-feed {
+  margin: 50px auto !important;
+  max-width: var(--wrapper-mw);
+}
