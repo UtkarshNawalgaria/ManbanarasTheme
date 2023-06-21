@@ -772,7 +772,7 @@
     "91340d9a-30d0-4c70-9272-8425419fe42e": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "<div class=\"t4s-container\" style=\"margin: 30px auto;\"><h3 class=\"t4s-section-title t4s-title\"><span>Our <span class=\"t4s-heading-highlight\">Instagram<\/span><\/span><\/h3><\/div>"
+        "custom_liquid": "<div class=\"t4s-container\" style=\"margin: 60px auto;\"><h3 class=\"t4s-section-title t4s-title\"><span>Our <span class=\"t4s-heading-highlight\">Instagram<\/span><\/span><\/h3><\/div>"
       }
     },
     "1687338028ca862ad0": {
@@ -831,7 +831,7 @@
         "heading_center": false,
         "top_heading": "Frequently Asked Questions",
         "top_subheading": "",
-        "tophead_mb": 30,
+        "tophead_mb": 60,
         "tophead_mb_tb": 30,
         "tophead_mb_mb": 25,
         "accor_des": "1",
