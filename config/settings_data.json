@@ -691,30 +691,7 @@
             "type": "help",
             "settings": {
               "title": "Need help?",
-              "text": "<i class=\"pegk pe-7s-call fwb mr__10\"><\/i>+01 23456789<br><i class=\"pegk pe-7s-mail fwb mr__10\"><\/i><a class=\"cg\" href=\"mailto:kalles@domain.com\">kalles@domain.com<\/a>"
-            }
-          },
-          "mb_nav-8": {
-            "type": "lang",
-            "settings": {
-            }
-          },
-          "mb_nav-9": {
-            "type": "cur",
-            "settings": {
-            }
-          },
-          "ba36126e-befd-4d89-a335-48671bbe34fb": {
-            "type": "menu",
-            "settings": {
-              "title": "Watch",
-              "url": "",
-              "open_link": "_self",
-              "menu": "",
-              "lb": "",
-              "lb_cl": "",
-              "icons_op": "2",
-              "icon": ""
+              "text": "<i class=\"pegk pe-7s-call fwb mr__10\"><\/i>+919198856789<br><i class=\"pegk pe-7s-mail fwb mr__10\"><\/i><a class=\"cg\" href=\"mailto:info@divinemanbanaras.com\">info@divinemanbanaras.com<\/a>"
             }
           }
         },
@@ -728,10 +705,7 @@
           "mb_nav-4",
           "mb_nav-5",
           "mb_nav-6",
-          "mb_nav-7",
-          "mb_nav-8",
-          "mb_nav-9",
-          "ba36126e-befd-4d89-a335-48671bbe34fb"
+          "mb_nav-7"
         ],
         "settings": {
         }
