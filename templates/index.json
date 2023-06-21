@@ -455,7 +455,7 @@
           "settings": {
             "title": "Casual",
             "icon_title": "",
-            "collection": "",
+            "collection": "casual-unstitched-suit",
             "product_des": "1",
             "rating_pos": "1",
             "list_color_pos": "1",
@@ -581,7 +581,7 @@
       "settings": {
         "design_heading": "1",
         "heading_center": false,
-        "top_heading": "Unstitched Suits by Occasion",
+        "top_heading": "Unstitched Suits by [Occasion]",
         "top_subheading": "",
         "head_bigger": false,
         "tophead_mb": 30,
@@ -596,7 +596,7 @@
         "item_fs": 17,
         "item_lh": 30,
         "item_fw": 500,
-        "item_ls": 0,
+        "item_ls": 0.9,
         "item_rounded": true,
         "pri_cl": "#010101",
         "secon_cl": "#b74d22",
@@ -798,7 +798,7 @@
       "settings": {
         "design_heading": "4",
         "heading_center": false,
-        "top_heading": "Happy <br>[Customers]",
+        "top_heading": "Our Happy [Customers]",
         "top_subheading": "",
         "tophead_mb": 60,
         "tophead_mb_tb": 30,
@@ -882,8 +882,8 @@
             "img_width_mb": 0,
             "design_heading": "4",
             "heading_center": false,
-            "title": "Shop <br>[Instagram]",
-            "description": "<p>Tag [<a href=\"https:\/\/demo-unsen.myshopify.com\/?preview_theme_id=134757449969\">@unsen<\/a>] in your Instagram photos for a chance to be featured here.<br\/>Find more inspiration on [our Instagram].<\/p>",
+            "title": "Shop [Instagram]",
+            "description": "",
             "tophead_mb": 30,
             "tophead_mb_tb": 30,
             "tophead_mb_mb": 10
@@ -991,6 +991,66 @@
         "mg_mb": "",
         "pd_mb": "30px,,36px,"
       }
+    },
+    "3c00efe7-0058-4129-87bc-4d521a783b4d": {
+      "type": "accordion",
+      "blocks": {
+        "template--19615523635504__3c00efe7-0058-4129-87bc-4d521a783b4d-168733117986fa8aee-0": {
+          "type": "accor_item",
+          "settings": {
+            "icon": "none",
+            "title": "What are Unstitched Suits or Unstitched Dress Material",
+            "content": "<p>We love to hear from you on our customer service, merchandise, website or any topics you want to share with us. Your comments and suggestions will be appreciated. Please complete the form below.<\/p>"
+          }
+        },
+        "template--19615523635504__3c00efe7-0058-4129-87bc-4d521a783b4d-168733117986fa8aee-1": {
+          "type": "accor_item",
+          "settings": {
+            "icon": "none",
+            "title": "Where can I buy the best unstitched suits online",
+            "content": "<p>We love to hear from you on our customer service, merchandise, website or any topics you want to share with us. Your comments and suggestions will be appreciated. Please complete the form below.<\/p>"
+          }
+        },
+        "template--19615523635504__3c00efe7-0058-4129-87bc-4d521a783b4d-168733117986fa8aee-2": {
+          "type": "accor_item",
+          "settings": {
+            "icon": "none",
+            "title": "Tab 03",
+            "content": "<p>We love to hear from you on our customer service, merchandise, website or any topics you want to share with us. Your comments and suggestions will be appreciated. Please complete the form below.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--19615523635504__3c00efe7-0058-4129-87bc-4d521a783b4d-168733117986fa8aee-0",
+        "template--19615523635504__3c00efe7-0058-4129-87bc-4d521a783b4d-168733117986fa8aee-1",
+        "template--19615523635504__3c00efe7-0058-4129-87bc-4d521a783b4d-168733117986fa8aee-2"
+      ],
+      "settings": {
+        "design_heading": "1",
+        "heading_center": true,
+        "top_heading": "Frequently Asked Questions",
+        "top_subheading": "",
+        "tophead_mb": 30,
+        "tophead_mb_tb": 30,
+        "tophead_mb_mb": 25,
+        "accor_des": "1",
+        "title_cl": "#000000",
+        "bg_title_cl": "",
+        "title_active_cl": "#000000",
+        "bg_title_active_cl": "",
+        "content_align": "default",
+        "auto_active": true,
+        "layout": "t4s-se-container",
+        "custom_width": 1000,
+        "cl_bg": "",
+        "cl_bg_gradient": "",
+        "mg": ",,50px,",
+        "pd": "",
+        "mg_tb": ",,30px,",
+        "pd_tb": "",
+        "mg_mb": ",,30px,",
+        "pd_mb": ""
+      }
     }
   },
   "order": [
@@ -1002,6 +1062,7 @@
     "3a5a1e87-1b8d-4c7c-9b22-6b96462bf27e",
     "16615957034ffa2edf",
     "1660796936327f9792",
-    "16584525096ea51cef"
+    "16584525096ea51cef",
+    "3c00efe7-0058-4129-87bc-4d521a783b4d"
   ]
 }
