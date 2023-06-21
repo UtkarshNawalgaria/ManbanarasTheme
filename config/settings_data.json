@@ -598,7 +598,7 @@
             "type": "menu",
             "settings": {
               "title": "Unstitched Suits",
-              "url": "",
+              "url": "shopify:\/\/collections\/all",
               "open_link": "_self",
               "menu": "mobile-menu",
               "lb": "",
