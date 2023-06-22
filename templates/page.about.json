@@ -239,7 +239,7 @@
         "space_v_item_tb": "10",
         "space_h_item_mb": "10",
         "space_v_item_mb": "10",
-        "layout": "t4s-container-wrap",
+        "layout": "t4s-se-container",
         "cl_bg": "",
         "cl_bg_gradient": "",
         "mg": ",,50px,",
