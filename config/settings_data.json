@@ -388,7 +388,7 @@
           "b2712926-ed44-4524-8b54-3dfd8ea1dda0": {
             "type": "image",
             "settings": {
-              "image_child": "shopify:\/\/shop_images\/DivineManbanaras_Logo.png",
+              "image_child": "shopify:\/\/shop_images\/Manbanaras_White_Logo.png",
               "img_width": 100,
               "img_width_tb": 100,
               "img_width_mb": 100,
@@ -612,7 +612,7 @@
           "cl_bg": "#b74d22",
           "cl_bg_gradient": "",
           "mg": "",
-          "pd": "48px,,27px",
+          "pd": "48px,27px,27px,27px",
           "mg_tb": "",
           "pd_tb": "48px,,27px",
           "mg_mb": "",
