@@ -6,7 +6,7 @@
         "c04f75e6-dfcb-4b9e-a3e7-ca7583d285b5": {
           "type": "1",
           "settings": {
-            "heading": "",
+            "heading": "{{ page.title }}",
             "fontf": "inherit",
             "text_cl": "#000000",
             "text_fs": 40,
