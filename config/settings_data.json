@@ -206,19 +206,6 @@
       "header-inline": {
         "type": "header-inline",
         "blocks": {
-          "4e9cc1f6-649b-440a-9c0c-f86d5c04c655": {
-            "type": "base",
-            "settings": {
-              "title": "ABOUT US",
-              "url": "shopify:\/\/pages\/about-us",
-              "open_link": "_self",
-              "icon": "",
-              "cus_cl": false,
-              "cl": "#ec0101",
-              "lb": "",
-              "lb_cl": ""
-            }
-          },
           "70811116-77e4-478a-bdb3-8fbf6a3cf48b": {
             "type": "mega",
             "settings": {
@@ -242,6 +229,19 @@
               "padding_inner_bn": "30px,30px,30px,30px"
             }
           },
+          "4e9cc1f6-649b-440a-9c0c-f86d5c04c655": {
+            "type": "base",
+            "settings": {
+              "title": "ABOUT US",
+              "url": "shopify:\/\/pages\/about-us",
+              "open_link": "_self",
+              "icon": "",
+              "cus_cl": false,
+              "cl": "#ec0101",
+              "lb": "",
+              "lb_cl": ""
+            }
+          },
           "f3e835fd-dbe6-4d94-885a-e0a6c0e4c154": {
             "type": "base",
             "settings": {
@@ -257,8 +257,8 @@
           }
         },
         "block_order": [
-          "4e9cc1f6-649b-440a-9c0c-f86d5c04c655",
           "70811116-77e4-478a-bdb3-8fbf6a3cf48b",
+          "4e9cc1f6-649b-440a-9c0c-f86d5c04c655",
           "f3e835fd-dbe6-4d94-885a-e0a6c0e4c154"
         ],
         "settings": {
