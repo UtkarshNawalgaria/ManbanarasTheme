@@ -372,8 +372,8 @@
             "settings": {
               "image_child": "shopify:\/\/shop_images\/Transparent_Logo.png",
               "img_width": 100,
-              "img_width_tb": 0,
-              "img_width_mb": 0,
+              "img_width_tb": 100,
+              "img_width_mb": 100,
               "img_link": "",
               "hidden_mobile": false,
               "mgb": 20,
