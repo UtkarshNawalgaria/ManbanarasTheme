@@ -309,7 +309,7 @@
             "type": "link",
             "settings": {
               "tt_hd": "By Fabric",
-              "use_bd": false,
+              "use_bd": true,
               "url": "",
               "open_link": "_self",
               "menu": "collections-list",
