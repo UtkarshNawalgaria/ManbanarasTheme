@@ -1862,80 +1862,16 @@
             "settings": {
               "text": "All Rights Reserved © [year] DivineManbanaras"
             }
-          },
-          "ea426a95-5f84-4190-96f3-0d928d38f0fa": {
-            "type": "bl_col",
-            "settings": {
-              "col_heading": "",
-              "col_border": false,
-              "menu": "",
-              "menu_style": "split-inline",
-              "space_item": 30,
-              "space_item_tb": 10,
-              "space_item_mb": 10,
-              "col_dk": "5",
-              "col_dk_w": "33.33333",
-              "col_tb": "6",
-              "col_dk_w_tb": "33.33333",
-              "col_mb": "12",
-              "content_align": "t4s-text-lg-start",
-              "padding_inner": "19px,,19px",
-              "content_align_tb": "t4s-text-md-start",
-              "padding_inner_tb": "19px,,19px",
-              "col_heading_mobile": "",
-              "content_align_mb": "t4s-text-center",
-              "padding_inner_mb": "10px,,15px"
-            }
-          },
-          "8f3fcb3e-b8e7-4df7-9942-5810c973c971": {
-            "type": "bl_col",
-            "settings": {
-              "col_heading": "",
-              "col_border": false,
-              "menu": "",
-              "menu_style": "default",
-              "space_item": 10,
-              "space_item_tb": 10,
-              "space_item_mb": 10,
-              "col_dk": "4",
-              "col_dk_w": "33.33333",
-              "col_tb": "5",
-              "col_dk_w_tb": "33.33333",
-              "col_mb": "12",
-              "content_align": "t4s-text-lg-end",
-              "padding_inner": "24px,,14px",
-              "content_align_tb": "t4s-text-md-end",
-              "padding_inner_tb": "24px,,14px",
-              "col_heading_mobile": "",
-              "content_align_mb": "t4s-text-center",
-              "padding_inner_mb": ",,14px"
-            }
-          },
-          "b9b5ee61-1185-4def-a0ce-c18cfd14c4d8": {
-            "type": "image",
-            "settings": {
-              "img_width": 0,
-              "img_width_tb": 0,
-              "img_width_mb": 0,
-              "img_link": "",
-              "hidden_mobile": false,
-              "mgb": 0,
-              "mgb_tb": 0,
-              "mgb_mb": 0
-            }
           }
         },
         "block_order": [
           "eb6d9bc4-a99e-4ab6-888b-14987778f177",
-          "f6bb46c0-474a-43ea-a80b-708f057a4d51",
-          "ea426a95-5f84-4190-96f3-0d928d38f0fa",
-          "8f3fcb3e-b8e7-4df7-9942-5810c973c971",
-          "b9b5ee61-1185-4def-a0ce-c18cfd14c4d8"
+          "f6bb46c0-474a-43ea-a80b-708f057a4d51"
         ],
         "settings": {
           "hidden_footer": false,
           "collapse": true,
-          "align_vertical": false,
+          "align_vertical": true,
           "border_top": true,
           "border_pos": "full",
           "space_h_item": "30",
@@ -1944,7 +1880,7 @@
           "space_v_item_tb": "0",
           "space_h_item_mb": "10",
           "space_v_item_mb": "0",
-          "space_between": false,
+          "space_between": true,
           "heading_des": "1",
           "heading_fontf": "inherit",
           "heading_fs": 16,
