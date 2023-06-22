@@ -1163,7 +1163,6 @@
     },
     "1659597722f6681f45": {
       "type": "custom-section",
-      "disabled": true,
       "blocks": {
         "1659597722890d58bc-3": {
           "type": "bl_col",
@@ -1268,7 +1267,6 @@
     },
     "1659601277db757be5": {
       "type": "map-pin-info",
-      "disabled": true,
       "blocks": {
         "16596012772d17765b-0": {
           "type": "custom_text",
@@ -1447,7 +1445,7 @@
         "height_tb": 600,
         "custom_mb": true,
         "height_mb": 600,
-        "map": "<iframe src=\"https:\/\/www.google.com\/maps\/place\/Manbanaras\/@25.3026682,82.9584801,17z\/data=!3m1!4b1!4m20!1m13!4m12!1m4!2m2!1d88.4306944!2d22.6003188!4e1!1m6!1m2!1s0x398e3392add0b3a3:0x214b4ae407f99dce!2smanbanaras!2m2!1d82.961055!2d25.3026682!3m5!1s0x398e3392add0b3a3:0x214b4ae407f99dce!8m2!3d25.3026682!4d82.961055!16s%2Fg%2F11qp04qxpk?entry=ttu\" width=\"100%\" height=\"600\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\"><\/iframe>",
+        "map": "<iframe src=\"https:\/\/www.google.com\/maps\/embed?pb=!1m14!1m8!1m3!1d14428.182848637754!2d82.961055!3d25.3026682!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x398e3392add0b3a3%3A0x214b4ae407f99dce!2sManbanaras!5e0!3m2!1sen!2sin!4v1687414880535!5m2!1sen!2sin\" width=\"100%\" height=\"600\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\"><\/iframe>",
         "text_align": "start",
         "text_align_mb": "start",
         "content_width": "auto",
