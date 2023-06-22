@@ -166,13 +166,6 @@
           "settings": {
             "title": "Additional Information"
           }
-        },
-        "3090d62a-b7a8-4f60-9743-2d26b84a78f3": {
-          "type": "tab_rivui",
-          "settings": {
-            "title": "Reviews for \"[pr_title]\"",
-            "review_liquid": ""
-          }
         }
       },
       "block_order": [
@@ -187,8 +180,7 @@
         "e8f22b12-b4a8-4a95-b4bc-9a0d2c8075c5",
         "4aa9c333-0ebd-4932-a29a-79cc5b7a3e83",
         "6927e5dd-04a4-4db6-a60c-76fab4d0069a",
-        "ff4e4ed9-2087-42f7-8182-94e5a5181c84",
-        "3090d62a-b7a8-4f60-9743-2d26b84a78f3"
+        "ff4e4ed9-2087-42f7-8182-94e5a5181c84"
       ],
       "settings": {
         "pr_layout": "default",
