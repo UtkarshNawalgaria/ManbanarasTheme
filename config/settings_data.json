@@ -313,7 +313,7 @@
               "url": "",
               "open_link": "_self",
               "menu": "collections-list",
-              "item_fsize": 16,
+              "item_fsize": 14,
               "sp_bettewn_item": 20,
               "col": "6"
             }
@@ -326,7 +326,7 @@
               "url": "",
               "open_link": "_self",
               "menu": "by-occasion",
-              "item_fsize": 16,
+              "item_fsize": 14,
               "sp_bettewn_item": 20,
               "col": "6"
             }
