@@ -1,8 +1,9 @@
-{%- liquid 
-assign sid            = section.id
-assign id_frm_login   = 'customer_login ' | append: sid 
-assign id_frm_recover = 'recover_customer_password' | append: sid 
-assign id_frm_create  = 'customer_create' | append: sid -%}
+{% liquid
+  assign sid            = section.id
+  assign id_frm_login   = 'customer_login ' | append: sid
+  assign id_frm_recover = 'recover_customer_password' | append: sid
+  assign id_frm_create  = 'customer_create' | append: sid
+%}
 
 {%- if request.design_mode -%}
 <link rel="stylesheet" href="{{ 'login-sidebar.css' | asset_url }}" media="all">
@@ -19,7 +20,7 @@ assign id_frm_create  = 'customer_create' | append: sid -%}
    </div>
    <div class="t4s-drawer__content">
       <div class="t4s-drawer__main">
-         <div data-t4s-scroll-me class="t4s-drawer__scroll t4s-current-scrollbar"> 
+         <div data-t4s-scroll-me class="t4s-drawer__scroll t4s-current-scrollbar">
 
             {%- comment -%}
              --------------------------------------------------------------------------------------------------------------------
@@ -30,7 +31,7 @@ assign id_frm_create  = 'customer_create' | append: sid -%}
                 <p>{{ 'customer.recover_password.subtext' | t }}</p>
                 {%- form 'recover_customer_password',id: id_frm_recover -%}
                   <div class="t4s_field t4s-pr t4s_mb_20">
-                    <input type="email" class="t4s_frm_input{% unless form.errors %} {% endunless %}" 
+                    <input type="email" class="t4s_frm_input{% unless form.errors %} {% endunless %}"
                       value=""
                       name="email"
                       id="RecoverEmail"
@@ -88,8 +89,8 @@ assign id_frm_create  = 'customer_create' | append: sid -%}
                     {{ form.errors | default_errors }}
                   {%- endif -%}
 
-                  <div class="t4s_field t4s-pr t4s_mb_20">        
-                    <input class="t4s_frm_input" 
+                  <div class="t4s_field t4s-pr t4s_mb_20">
+                    <input class="t4s_frm_input"
                       type="email"
                       name="customer[email]"
                       id="CustomerEmail"
@@ -107,8 +108,8 @@ assign id_frm_create  = 'customer_create' | append: sid -%}
                   </div>
 
                   {%- if form.password_needed -%}
-                    <div class="t4s_field t4s-pr t4s_mb_20">          
-                      <input class="t4s_frm_input" 
+                    <div class="t4s_field t4s-pr t4s_mb_20">
+                      <input class="t4s_frm_input"
                         type="password"
                         value=""
                         name="customer[password]"
@@ -129,9 +130,9 @@ assign id_frm_create  = 'customer_create' | append: sid -%}
                   <button class="t4s_btn_submmit t4s_btn_black t4s_mb_20">{{ 'customer.login.submit' | t }}</button>
 
                   <a class="t4s-d-inline-block t4s-next-tab" data-login-sidebar="create" href="{{ routes.account_register_url }}"> {{ 'customer.login.create_account' | t }}</a>
-                  
+
                 {%- endform -%}
-            </div> 
+            </div>
 
              {%- comment -%}
              --------------------------------------------------------------------------------------------------------------------
@@ -139,7 +140,7 @@ assign id_frm_create  = 'customer_create' | append: sid -%}
              --------------------------------------------------------------------------------------------------------------------
              {%- endcomment -%}
              <div id="create_{{ sid }}" class="t4s-content-login-sidebar is--create {% if settings.use_privacy_policy %}t4s-has-policy{% endif %}" data-showing="create" aria-hidden="true">
-               {%- form 'create_customer',id: id_frm_create, novalidate: 'novalidate',class: 't4s-w-100' -%}
+               {%- form 'create_customer', id: id_frm_create, novalidate: 'novalidate', class: 't4s-w-100' -%}
                   {%- if form.errors -%}
                   <h2 class="form__message" tabindex="-1" autofocus>
                     <svg aria-hidden="true" focusable="false" role="presentation">
@@ -147,7 +148,7 @@ assign id_frm_create  = 'customer_create' | append: sid -%}
                     </svg>
                     {{ 'customer.form.error_heading' | t }}
                   </h2>
-                  <ul> 
+                  <ul>
                     {%- for field in form.errors -%}
                       <li>
                         {%- if field == 'form' -%}
@@ -162,8 +163,8 @@ assign id_frm_create  = 'customer_create' | append: sid -%}
                     {%- endfor -%}
                   </ul>
                   {%- endif -%}
-                  <div class="t4s_field t4s-pr t4s_mb_20">      
-                     <input class="t4s_frm_input" 
+                  <div class="t4s_field t4s-pr t4s_mb_20">
+                     <input class="t4s_frm_input"
                        type="text"
                        name="customer[first_name]"
                        id="RegisterForm-FirstName"
@@ -175,7 +176,7 @@ assign id_frm_create  = 'customer_create' | append: sid -%}
                         </label>
                    </div>
                    <div class="t4s_field t4s-pr t4s_mb_20">
-                     <input class="t4s_frm_input" 
+                     <input class="t4s_frm_input"
                        type="text"
                        name="customer[last_name]"
                        id="RegisterForm-LastName"
@@ -188,7 +189,7 @@ assign id_frm_create  = 'customer_create' | append: sid -%}
                      </label>
                    </div>
                    <div class="t4s_field t4s-pr t4s_mb_20">
-                     <input class="t4s_frm_input" 
+                     <input class="t4s_frm_input"
                        type="email"
                        name="customer[email]"
                        id="RegisterForm-email"
@@ -215,8 +216,8 @@ assign id_frm_create  = 'customer_create' | append: sid -%}
                        {{ form.errors.translated_fields['email'] | capitalize }} {{ form.errors.messages['email'] }}.
                      </span>
                    {%- endif -%}
-                   <div class="t4s_field t4s-pr t4s_mb_20">     
-                     <input class="t4s_frm_input" 
+                   <div class="t4s_field t4s-pr t4s_mb_20">
+                     <input class="t4s_frm_input"
                        type="password"
                        name="customer[password]"
                        id="RegisterForm-password"
@@ -240,7 +241,7 @@ assign id_frm_create  = 'customer_create' | append: sid -%}
                      </span>
                    {%- endif -%}
                     {%- if settings.use_privacy_policy -%}
-                      <div class="t4s-privacy-policy">{%- if settings.privacy_policy_link != blank -%}{{ 'customer.register.privacy_policy_html' | t: link: pages[settings.privacy_policy_link].url }}{%- else -%}{{ 'customer.register.privacy_policy' | t }}{%- endif -%}</div> 
+                      <div class="t4s-privacy-policy">{%- if settings.privacy_policy_link != blank -%}{{ 'customer.register.privacy_policy_html' | t: link: pages[settings.privacy_policy_link].url }}{%- else -%}{{ 'customer.register.privacy_policy' | t }}{%- endif -%}</div>
                     {%- endif -%}
                    <button class="t4s_btn_submmit t4s_btn_black t4s_mb_20">{{ 'customer.register.submit' | t }}</button>
                    <a class="t4s-d-inline-block t4s-next-tab" data-login-sidebar="login" href="{{ routes.account_login_url }}"> {{ 'customer.register.login_here' | t }}</a>
@@ -255,19 +256,12 @@ assign id_frm_create  = 'customer_create' | append: sid -%}
 {%- if request.design_mode %}</div>{% endif -%}
 
 {% schema %}
-  {
-    "name": "Login Configs",
-    "tag": "section",
-    "class": "t4s-section-admn2-fixed",
-    "settings": [
-      /*{
-        "type": "checkbox",
-        "id": "enable_popup",
-        "label": "Enable login popup center",
-        "default": false,
-        "info": "Only works on desktop"
-      }*/
-    ]
-  } 
+{
+  "name": "Login Configs",
+  "tag": "section",
+  "class": "t4s-section-admn2-fixed",
+  "settings": [
 
+  ]
+}
 {% endschema %}

@@ -62,7 +62,7 @@ t4s_group_btns_split
 		  <symbol id="icon-h-cart" viewBox="0 0 32 32" fill="currentColor">
 		  	<path xmlns="http://www.w3.org/2000/svg" d="M 16 3 C 13.253906 3 11 5.253906 11 8 L 11 9 L 6.0625 9 L 6 9.9375 L 5 27.9375 L 4.9375 29 L 27.0625 29 L 27 27.9375 L 26 9.9375 L 25.9375 9 L 21 9 L 21 8 C 21 5.253906 18.746094 3 16 3 Z M 16 5 C 17.65625 5 19 6.34375 19 8 L 19 9 L 13 9 L 13 8 C 13 6.34375 14.34375 5 16 5 Z M 7.9375 11 L 11 11 L 11 14 L 13 14 L 13 11 L 19 11 L 19 14 L 21 14 L 21 11 L 24.0625 11 L 24.9375 27 L 7.0625 27 Z"/>
 		   </symbol>
-		   <symbol id="icon-h-compare" viewBox="0 0 551.127 551.127"> 
+		   <symbol id="icon-h-compare" viewBox="0 0 551.127 551.127">
 			 	<path d="M482.21 378.9h-62.607c-21.882 0-42.754-8.208-58.749-23.143l-85.906-80.179 85.939-80.208c15.978-14.935 36.851-23.143 58.749-23.143h62.601v34.446l68.889-51.668-68.889-51.668v34.446h-62.601c-30.661 0-59.876 11.504-82.262 32.427L138.622 355.723c-16.029 14.935-36.868 23.177-58.716 23.177H.032v34.378l79.74.034h.151c30.577 0 59.758-11.504 82.195-32.427l87.592-81.752 87.63 81.785c22.403 20.923 51.618 32.427 82.262 32.427h62.607v34.446l68.889-51.666-68.889-51.671.001 34.446zM79.908 172.26c21.831 0 42.67 8.208 58.665 23.143l60.652 56.609 25.237-23.553-62.376-58.217c-22.403-20.923-51.584-32.427-82.161-32.427h-.151L0 137.848v34.378h79.79c.051.001.084.034.118.034z"/>
 			</symbol>
 		</svg>
@@ -80,7 +80,7 @@ t4s_group_btns_split
 			<circle cx="11" cy="11" r="8"/>
 			<path d="M21 21l-4.35-4.35"/>
 		</symbol>
-		<symbol id="icon-h-account" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"> 
+		<symbol id="icon-h-account" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
 			<path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
 			<circle cx="12" cy="7" r="4"/>
 		</symbol>
@@ -98,13 +98,13 @@ t4s_group_btns_split
 	</svg>
 {%- endcase -%}
 {%- endif -%}
-{%- liquid 
+{%- liquid
 	capture accout_txt
 		unless customer
-			echo 'customer.menu.login_register' | t 
+			echo 'customer.menu.login_register' | t
 		else
-			echo 'customer.menu.account' | t 
-		endunless		
+			echo 'customer.menu.account' | t
+		endunless
 	endcapture
 -%}
 {%- capture my_account_dropdown -%}
@@ -212,7 +212,7 @@ t4s_group_btns_split
 			    display: block;
 			    margin-left: 7px;
 			}
-			
+
 			.t4s-h-cart__design1 .t4s-site-nav__icon.t4s-site-nav__btnMenu {
 			    padding-right: 0;
 			}
@@ -225,7 +225,7 @@ t4s_group_btns_split
 		{%- if source == '1' -%}<div class="t4s-split-text">{{- se_stts.custom_html -}}</div>
         {%- elsif source == '2' or source == '3' -%}
           {{ 'icon-social.css' | asset_url | stylesheet_tag }}
-          {%- liquid 
+          {%- liquid
             if source == '3'
               assign follow_social = true
             elsif source == '2'
@@ -336,7 +336,7 @@ t4s_group_btns_split
 		              visibility: visible;
 		              pointer-events: auto;
 		          }
-		          .t4s-frm-search__content { 
+		          .t4s-frm-search__content {
 		            height: auto;
 		            overflow: auto;
 		            overflow-x: hidden;
@@ -405,11 +405,11 @@ t4s_group_btns_split
 		         .t4s-search-header__form-wrap .t4s-mini-search__viewAll:hover {
 		        		color: var(--accent-color);
 		         }
-					  </style>	
+					  </style>
 			      <div data-predictive-search data-sid="search-hidden" class="t4s-search-header__form-wrap t4s-search-header t4s-pr t4s-d-none t4s-d-lg-block">
 		            {%- liquid
 		             assign collection = collections[settings.search_prs_suggest]
-		             assign limit = 5 
+		             assign limit = 5
 		             assign show_search_suggest = settings.show_search_suggest
 		             if shop.types.size < 3
 		             assign shop_types = shop.types | join: ' ' | remove: ' '
@@ -436,7 +436,7 @@ t4s_group_btns_split
 		            </form>
 		            <div class="t4s-pr">
 		                 <div class="t4s-pa t4s-frm-search__results t4s-text-start">
-		                    <div data-skeleton-search class="t4s-skeleton_wrap t4s-dn"> 
+		                    <div data-skeleton-search class="t4s-skeleton_wrap t4s-dn">
 		                       {%- for i in (1..4) -%}
 		                       <div class="t4s-row t4s-space-item-inner">
 		                          <div class="t4s-col-auto t4s-col-item t4s-widget_img_pr"><div class="t4s-skeleton_img"></div></div>
@@ -446,11 +446,11 @@ t4s_group_btns_split
 		                    </div>
 		                    <div data-results-search class="t4s-frm-search__content t4s_ratioadapt t4s-current-scrollbar"{% if collection == blank or show_search_suggest == false %} style="display: none;"{% endif %}>
 		                        {%- if collection != blank and show_search_suggest -%}
-		                            {%- liquid  
-		                      			assign pr_url = product.url | within: collection 
+		                            {%- liquid
+		                      			assign pr_url = product.url | within: collection
 		                      			assign placeholder_img = settings.placeholder_img
 				                      	assign price_varies_style = settings.price_varies_style
-				                      	
+
 				                    -%}
 		                          	{%- for product in collection.products limit: limit -%}
 		                          		{%- render 'pr-loop-item', imgatt: '', product: product, pr_url: product.url, placeholder_img: placeholder_img, price_varies_style: price_varies_style -%}
@@ -489,7 +489,7 @@ t4s_group_btns_split
 			    </div>
 		   {%- endif -%}
 		   {%- if se_stts.show_compare -%}
-		   <div class="t4s-site-nav__icon t4s-site-nav__compare t4s-d-none t4s-d-lg-inline-block">	
+		   <div class="t4s-site-nav__icon t4s-site-nav__compare t4s-d-none t4s-d-lg-inline-block">
 		      <a data-link-compare class="t4s-pr" href="{{ routes.search_url }}/?view=compare">
 				{%- if se_stts.h_txt_lable -%} {{ 'customer.menu.compare' | t }} {%- else -%} <svg class="t4s-icon t4s-icon--compare" aria-hidden="true" focusable="false" role="presentation"><use href="#icon-h-compare"></use></svg>{%- endif -%}
 				  <span data-count-compare class="t4s-pa t4s-op-0 t4s-ts-op t4s-count-box">0</span>
@@ -497,7 +497,7 @@ t4s_group_btns_split
 		   </div>
 		   {%- endif -%}
 			{%- if se_stts.show_wis -%}
-		   <div class="t4s-site-nav__icon t4s-site-nav__heart t4s-d-none t4s-d-lg-inline-block">	
+		   <div class="t4s-site-nav__icon t4s-site-nav__heart t4s-d-none t4s-d-lg-inline-block">
 		      <a data-link-wishlist class="t4s-pr" href="{{ routes.search_url }}/?view=wishlist">
 				{%- if se_stts.h_txt_lable -%} {{ 'customer.menu.wishlist' | t }} {%- else -%} <svg class="t4s-icon t4s-icon--heart" aria-hidden="true" focusable="false" role="presentation"><use href="#icon-h-heart"></use></svg>{%- endif -%}
 				  <span data-count-wishlist class="t4s-pa t4s-op-0 t4s-ts-op t4s-count-box">0</span>
@@ -506,7 +506,7 @@ t4s_group_btns_split
 		   {%- endif -%}
 
 			{%- if se_stts.cart_des != '0' -%}
-		   <div class="t4s-site-nav__icon t4s-site-nav__cart">	
+		   <div class="t4s-site-nav__icon t4s-site-nav__cart">
 				<a href="{{ routes.cart_url }}"{% if request.page_type != 'cart' and settings.cart_type != 'disable' %} data-drawer-delay- data-drawer-options='{ "id": "#t4s-mini_cart" }'{% endif %}>
 					<span class="t4s-pr t4s-icon-cart__wrap">
 					  <span class="{% if se_stts.h_txt_lable %}t4s-d-lg-inline-block t4s-d-none{% else %}t4s-d-none{% endif %}">{{ 'customer.menu.cart' | t }}</span><svg class="t4s-icon t4s-icon--cart {% if se_stts.h_txt_lable %}t4s-d-lg-none{% endif -%}" aria-hidden="true" focusable="false" role="presentation"><use href="#icon-h-cart"></use></svg>
@@ -521,7 +521,7 @@ t4s_group_btns_split
 		   {%- endif -%}
 
 		   {%- if isShowMenuBtn -%}
-		    <div class="t4s-site-nav__icon t4s-site-nav__btnMenu t4s-d-none t4s-d-lg-block">{%- render 'push_menu' -%}</div> 
+		    <div class="t4s-site-nav__icon t4s-site-nav__btnMenu t4s-d-none t4s-d-lg-block">{%- render 'push_menu' -%}</div>
 		   {%- endif -%}
 		</div>
 	{%- endif -%}
@@ -535,7 +535,7 @@ t4s_group_btns_split
 					</a>
 			   </div>
 			   {%- endif -%}
-				
+
 			</div>
 	{%- else -%}
 			<div class="t4s-site-nav__icons t4s-use__{{ se_stts.h_icon }} {% if se_stts.h_txt_lable %}t4s-use__label {% endif -%} t4s-h-cart__design{{ se_stts.cart_des }} t4s-lh-1 t4s-d-inline-flex t4s-align-items-center">
@@ -553,7 +553,7 @@ t4s_group_btns_split
 				   	</div>
 			   {%- endif -%}
 			   	{%- if se_stts.show_compare -%}
-			   	<div class="t4s-site-nav__icon t4s-site-nav__compare t4s-d-none t4s-d-md-inline-block">	
+			   	<div class="t4s-site-nav__icon t4s-site-nav__compare t4s-d-none t4s-d-md-inline-block">
 			      	<a data-link-compare class="t4s-pr" href="{{ routes.search_url }}/?view=compare">
 					  <svg class="t4s-icon t4s-icon--compare" aria-hidden="true" focusable="false" role="presentation"><use href="#icon-h-compare"></use></svg>
 					  <span data-count-compare class="t4s-pa t4s-op-0 t4s-ts-op t4s-count-box">0</span>
@@ -561,7 +561,7 @@ t4s_group_btns_split
 			   	</div>
 			   	{%- endif -%}
 				{%- if se_stts.show_wis -%}
-			   	<div class="t4s-site-nav__icon t4s-site-nav__heart t4s-d-none t4s-d-md-inline-block">	
+			   	<div class="t4s-site-nav__icon t4s-site-nav__heart t4s-d-none t4s-d-md-inline-block">
 			      <a data-link-wishlist class="t4s-pr" href="{{ routes.search_url }}/?view=wishlist">
 					  <svg class="t4s-icon t4s-icon--wishlist" aria-hidden="true" focusable="false" role="presentation"><use href="#icon-h-heart"></use></svg>
 					  <span data-count-wishlist class="t4s-pa t4s-op-0 t4s-ts-op t4s-count-box">0</span>
@@ -570,7 +570,7 @@ t4s_group_btns_split
 			   {%- endif -%}
 
 				{%- if se_stts.cart_des != '0' -%}
-			    <div class="t4s-site-nav__icon t4s-site-nav__cart">	
+			    <div class="t4s-site-nav__icon t4s-site-nav__cart">
 					<a href="{{ routes.cart_url }}"{% if request.page_type != 'cart' and settings.cart_type != 'disable' %} data-drawer-delay- data-drawer-options='{ "id": "#t4s-mini_cart" }'{% endif %}>
 						<span class="t4s-pr t4s-icon-cart__wrap">
 						  <svg class="t4s-icon t4s-icon--account" aria-hidden="true" focusable="false" role="presentation"><use href="#icon-h-cart"></use></svg>
@@ -585,8 +585,8 @@ t4s_group_btns_split
 			    {%- endif -%}
 			</div>
 
-			
+
 	{%- endif -%}
-	
+
 {%- endif -%}
 

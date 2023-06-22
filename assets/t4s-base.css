@@ -4769,11 +4769,15 @@ blockquote small{
 /* fix app shopify overflow */
 @media (max-width: 500px) {
   .locale-selectors__content form {
-      max-width: 100%;
+    max-width: 100%;
   }
 }
 
 #insta-feed {
   margin: 50px auto !important;
   max-width: var(--wrapper-mw);
+}
+
+.t4s-drawer {
+  width: 540px !important;
 }
