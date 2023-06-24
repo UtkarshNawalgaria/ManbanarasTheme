@@ -926,7 +926,7 @@
         "bg_title_active_cl": "",
         "content_align": "default",
         "auto_active": false,
-        "layout": "t4s-cus-width",
+        "layout": "t4s-se-container",
         "custom_width": 800,
         "cl_bg": "",
         "cl_bg_gradient": "",
