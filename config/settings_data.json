@@ -30,6 +30,7 @@
     "badge_reverse_color": true,
     "label_sale_style": "2",
     "use_new_badge": false,
+    "within_cat": false,
     "enable_rating": false,
     "show_qty": false,
     "enable_pr_ellipsis": false,
