@@ -141,7 +141,7 @@ for link in linklists.menu-e-commerce-connect.links
   };
 
   window.T4Sconfigs = {
-    theme: 'unsen',
+    theme: 'DivineManbanaras',
     isPageIndex: {{ is_page_index | json }},
     cartCurrency: {{ cart.currency.iso_code | json }},
     moneyFormat: {% if settings.currency_code_enabled %}{{ shop.money_with_currency_format | json }}{% else %}{{ shop.money_format | json }}{% endif %},
@@ -191,8 +191,8 @@ for link in linklists.menu-e-commerce-connect.links
     cartType: '{{ settings.cart_type }}',
     afterActionATC: '{{ settings.after_action_atc }}',
     enableCompePopup: {{ settings.enable_compe_popup }},
-    preViewBar: 'demo-unsen',
-    cacheName: '{{ shop.metafields.t4s.unsen.value | default:'unsen' }}{% if customer %}customer{% endif %}{{ theme.id }}',
+    preViewBar: 'divine-manbanaras',
+    cacheName: '{{ shop.metafields.t4s.unsen.value | default: 'divine-manbanaras' }}{% if customer %}customer{% endif %}{{ theme.id }}',
     CartAttrHidden : true,
     timeOutNotices : 4000,
     autoHideNotices: true,
