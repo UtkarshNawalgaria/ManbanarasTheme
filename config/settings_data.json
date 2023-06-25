@@ -38,6 +38,8 @@
     "gift_wrap_pr": "gift-wrap",
     "link_ship": "shipping-policy",
     "link_conditions": "terms",
+    "privacy_policy_link": "privacy-policy",
+    "growave_social_login": false,
     "filter_type_search": true,
     "search_types": "sidebar_hidden",
     "show_search_suggest": true,
