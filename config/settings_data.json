@@ -75,53 +75,13 @@
           "announcement-bar-0": {
             "type": "announcement",
             "settings": {
-              "content": "<p>Today deal sale off 70%. End in [countdown]. Hurry Up!! [icon_arrow]<\/p>",
+              "content": "<p>Free Shipping on all orders in India<\/p>",
               "icons_op": "0",
-              "icon_awesome": "las la-home",
+              "icon_awesome": "las la-shipping-fast",
               "btn_link_layout": "2",
               "cl_btn": "#ffffff",
               "bg_btn": "#000000",
-              "countdown": "2023\/04\/19",
-              "cd_layout": "1",
-              "txt_day": "days",
-              "txt_h": "h",
-              "txt_m": "m",
-              "txt_s": "s",
-              "bg_cd": "#d51919",
-              "cl_cd": "#ffffff",
-              "dayx": 0
-            }
-          },
-          "announcement-bar-1": {
-            "type": "announcement",
-            "settings": {
-              "content": "<p>Today deal sale off 70%. End in [countdown]. Hurry Up!! [icon_arrow]<\/p>",
-              "icons_op": "0",
-              "icon_awesome": "las la-home",
-              "btn_link_layout": "2",
-              "cl_btn": "#ffffff",
-              "bg_btn": "#000000",
-              "countdown": "2023\/04\/19",
-              "cd_layout": "1",
-              "txt_day": "days",
-              "txt_h": "h",
-              "txt_m": "m",
-              "txt_s": "s",
-              "bg_cd": "#d51919",
-              "cl_cd": "#ffffff",
-              "dayx": 0
-            }
-          },
-          "announcement-bar-2": {
-            "type": "announcement",
-            "settings": {
-              "content": "<p>Today deal sale off 70%. End in [countdown]. Hurry Up!! [icon_arrow]<\/p>",
-              "icons_op": "0",
-              "icon_awesome": "las la-home",
-              "btn_link_layout": "2",
-              "cl_btn": "#ffffff",
-              "bg_btn": "#000000",
-              "countdown": "2023\/04\/19",
+              "countdown": "",
               "cd_layout": "1",
               "txt_day": "days",
               "txt_h": "h",
@@ -134,19 +94,17 @@
           }
         },
         "block_order": [
-          "announcement-bar-0",
-          "announcement-bar-1",
-          "announcement-bar-2"
+          "announcement-bar-0"
         ],
         "settings": {
-          "show_announcement": false,
+          "show_announcement": true,
           "effect": "1",
           "au_time": 3.5,
-          "height": 41,
+          "height": 28,
           "fontsize": 12,
           "ls_sp": 0,
           "cl": "#ffffff",
-          "bg": "#e91e63",
+          "bg": "#d68130",
           "bg_op": 100,
           "close": "1",
           "cl_btn": "#ffffff",
