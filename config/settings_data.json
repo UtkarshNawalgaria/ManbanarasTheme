@@ -1850,30 +1850,10 @@
               "padding_inner_mb": ""
             }
           },
-          "39e76d27-d4df-41e4-a7cb-9694b008cf1f": {
-            "type": "custom_text",
+          "8953dbd6-9fa5-4e87-9a48-0d0a58d2a224": {
+            "type": "copyR",
             "settings": {
-              "text": "Powered by <a href=\"https:\/\/olive.cloud\">Olivecloud<\/a>",
-              "remove_br_tag": false,
-              "tag": "p",
-              "fontf": "inherit",
-              "text_cl": "#fff",
-              "text_fs": 14,
-              "text_lh": 0,
-              "text_fw": 400,
-              "text_ls": 0,
-              "font_italic": false,
-              "text_shadow": false,
-              "mgb": 15,
-              "text_fs_tb": 16,
-              "text_lh_tb": 0,
-              "text_ls_tb": 0,
-              "mgb_tb": 10,
-              "hidden_mobile": false,
-              "text_fs_mb": 16,
-              "text_lh_mb": 0,
-              "text_ls_mb": 0,
-              "mgb_mb": 10
+              "text": "Powered by <a href=\"https:\/\/olive.cloud\">Olivecloud<\/a>"
             }
           }
         },
@@ -1881,7 +1861,7 @@
           "eb6d9bc4-a99e-4ab6-888b-14987778f177",
           "f6bb46c0-474a-43ea-a80b-708f057a4d51",
           "09a7dc25-1a14-4e0e-b2e6-84a24a992b53",
-          "39e76d27-d4df-41e4-a7cb-9694b008cf1f"
+          "8953dbd6-9fa5-4e87-9a48-0d0a58d2a224"
         ],
         "settings": {
           "hidden_footer": false,
