@@ -462,7 +462,7 @@
             "height_dk": 350,
             "custom_tb": true,
             "height_tb": 350,
-            "custom_mb": true,
+            "custom_mb": false,
             "height_mb": 350,
             "image": "shopify:\/\/shop_images\/Discount_DivineManbanaras.jpg",
             "image_size": "cover",
