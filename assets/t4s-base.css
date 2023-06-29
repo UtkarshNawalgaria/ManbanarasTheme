@@ -4780,4 +4780,5 @@ blockquote small{
 
 .t4s-drawer {
   width: 540px !important;
+  max-width: 92%;
 }
