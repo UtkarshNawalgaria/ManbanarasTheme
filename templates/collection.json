@@ -2,6 +2,7 @@
   "sections": {
     "5e66fcdb-8797-4932-95b3-60707ba38a98": {
       "type": "hero-image",
+      "disabled": true,
       "settings": {
         "se_height": "t4s_ratioadapt_mix",
         "custom_dk": true,
@@ -147,7 +148,7 @@
         "padding_top_mb": 50,
         "padding_bottom_mb": 50,
         "mg_bmb": 50,
-        "box_border": "bottom",
+        "box_border": "top_bottom",
         "bg_pos": "center top",
         "bg_repeat": "no-repeat",
         "bg_size": "cover",
