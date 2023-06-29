@@ -1,9 +1,9 @@
 {% liquid
   assign font_source = settings.font_source
   assign cl_lazyload = '#ffffff'
-  assign cHVyY2hh    = 'cHVyY2hhc2VfY29kZQ==' | base64_url_safe_decode
-  assign pr_overlay  = settings.pr_overlay | divided_by: 100.0
-  assign accent_lightness     = settings.accent_color | color_extract: 'lightness'
+  assign cHVyY2hh = 'cHVyY2hhc2VfY29kZQ==' | base64_url_safe_decode
+  assign pr_overlay = settings.pr_overlay | divided_by: 100.0
+  assign accent_lightness = settings.accent_color | color_extract: 'lightness'
 %}
 
 {% if font_source == '2' %}
@@ -11,9 +11,10 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
   {% liquid
-  assign fm_gg1 = settings.fnt_fm_gg1
-  assign fm_gg2 = settings.fnt_fm_gg2 | default: fm_gg1
-  assign fm_gg3 = settings.fnt_fm_gg3 | default: fm_gg1 %}
+    assign fm_gg1 = settings.fnt_fm_gg1
+    assign fm_gg2 = settings.fnt_fm_gg2 | default: fm_gg1
+    assign fm_gg3 = settings.fnt_fm_gg3 | default: fm_gg1
+  %}
 
   {% capture font_var %}
     {{ fm_gg1 | strip | replace: ' ', '+' }}:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i
@@ -21,10 +22,14 @@
     {% if fm_gg3 != fm_gg1 and fm_gg3 != fm_gg2 %}|{{ fm_gg3 | strip | replace: ' ', '+' }}:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i{% endif %}
   {% endcapture %}
 
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family={{ font_var }}&display=swap" media="print" onload="this.media='all'">
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family={{ font_var }}&display=swap"
+    media="print"
+    onload="this.media='all'"
+  >
 
 {% else %}
-
   {% assign font_1 = settings.fnt_fm_sp1 %}
   {% assign font_2 = settings.fnt_fm_sp2 | default: font_1 %}
   {% assign font_3 = settings.fnt_fm_sp3 | default: font_1 %}
@@ -43,7 +48,6 @@
 {% if isRTL %}{{- 'theme_rtl.css' | asset_url | stylesheet_tag: preload: true -}}{% endif %}
 {% if settings.bootstrap_css %}{{- 'bootstrap.min.css' | asset_url | stylesheet_tag -}}{% endif %}
 {% style %}
-
   {% if font_source == '1' %}
 
     {% assign cl_flz = 'h1, h2, h3, h4, h5, h6, .f__mont, .f_heading, .h3, ' %}
@@ -294,31 +298,34 @@
         display: none;
       }
     {% endif %}
-  {% endstyle %}
+{% endstyle %}
 
- <script>
+<script>
   const t4sXMLHttpRequest = window.XMLHttpRequest, documentElementT4s = document.documentElement; documentElementT4s.className = documentElementT4s.className.replace('no-js', 'js');function loadImageT4s(_this) { _this.classList.add('lazyloadt4sed')};
   {% comment %}// We do a quick detection of some features (we could use Modernizr but for so little...){% endcomment %}
   (function() { const matchMediaHoverT4s = (window.matchMedia('(-moz-touch-enabled: 1), (hover: none)')).matches; documentElementT4s.className += ((window.CSS && window.CSS.supports('(position: sticky) or (position: -webkit-sticky)')) ? ' t4sp-sticky' : ' t4sp-no-sticky'); documentElementT4s.className += matchMediaHoverT4s ? ' t4sp-no-hover' : ' t4sp-hover'; {% comment %} This code is done to force reload the page when the back button is hit (which allows to fix stale data on cart, for instance){% endcomment %}window.onpageshow = function() { if (performance.navigation.type === 2) {document.dispatchEvent(new CustomEvent('cart:refresh'))} }; if (!matchMediaHoverT4s && window.width > 1024) { document.addEventListener('mousemove', function(evt) { documentElementT4s.classList.replace('t4sp-no-hover','t4sp-hover'); document.dispatchEvent(new CustomEvent('theme:hover')); }, {once : true} ); } }());{% if request.design_mode %}var VGhlbWVOYW1lVDQ = 'dW5zZW4=', cHVyY2hh = {{ settings[cHVyY2hh] | default: '' | base64_encode | json }}, U2hvcE1lb1Q0 = {{ shop.email | default: 'no_email' | base64_encode | json }};{% endif %}
 </script>
 
-{% if settings.wishlist_mode == "3" %}
-<style>
-.t4s-product-form__btn .faves-count {
-    position: absolute;
-}
+{% if settings.wishlist_mode == '3' %}
+  <style>
+    .t4s-product-form__btn .faves-count {
+        position: absolute;
+    }
 
-.t4s-site-nav__icon a.ssw-link-fave-menu {
-    position: relative;
-}
-.t4s-site-nav__icons i.ssw-icon-heart-o,
-.t4s-site-nav__icons i.ssw-icon-heart {
-    font-size: 20px;
-}
+    .t4s-site-nav__icon a.ssw-link-fave-menu {
+        position: relative;
+    }
+    .t4s-site-nav__icons i.ssw-icon-heart-o,
+    .t4s-site-nav__icons i.ssw-icon-heart {
+        font-size: 20px;
+    }
 
-.t4s-site-nav__icon .ssw-counter-fave-menu {
-    position: absolute;
-    opacity: 0;
-}
-</style>
+    .t4s-site-nav__icon .ssw-counter-fave-menu {
+        position: absolute;
+        opacity: 0;
+    }
+  </style>
 {% endif %}
+<script type="text/javascript">
+  (function(w,s){var e=document.createElement("script");e.type="text/javascript";e.async=true;e.src="https://cdn-in.pagesense.io/js/fidaindiatradeximprivatelimited/e91e1f6f1aab402e8ee36652b7158bf6.js";var x=document.getElementsByTagName("script")[0];x.parentNode.insertBefore(e,x);})(window,"script");
+</script>
