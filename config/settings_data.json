@@ -1825,11 +1825,63 @@
             "settings": {
               "text": "All Rights Reserved © [year] DivineManbanaras - Manahkriti Tradelinks"
             }
+          },
+          "09a7dc25-1a14-4e0e-b2e6-84a24a992b53": {
+            "type": "bl_col",
+            "settings": {
+              "col_heading": "",
+              "col_border": false,
+              "menu": "",
+              "menu_style": "default",
+              "space_item": 10,
+              "space_item_tb": 10,
+              "space_item_mb": 10,
+              "col_dk": "6",
+              "col_dk_w": "33.33333",
+              "col_tb": "6",
+              "col_dk_w_tb": "33.33333",
+              "col_mb": "12",
+              "content_align": "t4s-text-lg-start",
+              "padding_inner": "",
+              "content_align_tb": "t4s-text-md-start",
+              "padding_inner_tb": "",
+              "col_heading_mobile": "",
+              "content_align_mb": "t4s-text-start",
+              "padding_inner_mb": ""
+            }
+          },
+          "39e76d27-d4df-41e4-a7cb-9694b008cf1f": {
+            "type": "custom_text",
+            "settings": {
+              "text": "Powered by <a href=\"https:\/\/olive.cloud\">Olivecloud<\/a>",
+              "remove_br_tag": false,
+              "tag": "p",
+              "fontf": "inherit",
+              "text_cl": "#fff",
+              "text_fs": 16,
+              "text_lh": 0,
+              "text_fw": 400,
+              "text_ls": 0,
+              "font_italic": false,
+              "text_shadow": false,
+              "mgb": 15,
+              "text_fs_tb": 16,
+              "text_lh_tb": 0,
+              "text_ls_tb": 0,
+              "mgb_tb": 10,
+              "hidden_mobile": false,
+              "text_fs_mb": 16,
+              "text_lh_mb": 0,
+              "text_ls_mb": 0,
+              "mgb_mb": 10
+            }
           }
         },
         "block_order": [
           "eb6d9bc4-a99e-4ab6-888b-14987778f177",
-          "f6bb46c0-474a-43ea-a80b-708f057a4d51"
+          "f6bb46c0-474a-43ea-a80b-708f057a4d51",
+          "09a7dc25-1a14-4e0e-b2e6-84a24a992b53",
+          "39e76d27-d4df-41e4-a7cb-9694b008cf1f"
         ],
         "settings": {
           "hidden_footer": false,
