@@ -151,7 +151,7 @@
         "bg_pos": "center top",
         "bg_repeat": "no-repeat",
         "bg_size": "cover",
-        "show_border": true,
+        "show_border": false,
         "cl_bd_trans": "#ffffff",
         "border_cl_trans": 15,
         "color_trans": "#000000",
