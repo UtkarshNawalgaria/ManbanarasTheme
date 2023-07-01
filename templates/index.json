@@ -116,7 +116,7 @@
         "btn_cl": "light",
         "btn_size": "large",
         "btn_hidden_mobile": false,
-        "nav_dot": true,
+        "nav_dot": false,
         "dots_width": "container",
         "dots_align": "center",
         "dots_design": "default",
