@@ -109,7 +109,7 @@
         "nav_btn": true,
         "btn_distance": 26,
         "nav_btn_icon": "default",
-        "btn_pos": "vertical",
+        "btn_pos": "default",
         "btn_vi": "always",
         "btn_owl": "simple",
         "btn_shape": "round",
