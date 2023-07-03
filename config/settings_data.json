@@ -824,9 +824,9 @@
               "btn_viewcart": true,
               "btn_checkout": true,
               "btn_icon": false,
-              "btn_inline": true,
+              "btn_inline": false,
               "cart_button_style": "outline",
-              "cart_btn_cl": "dark",
+              "cart_btn_cl": "primary",
               "cart_button_effect": "default",
               "button_style": "default",
               "btn_cl": "dark",
@@ -850,7 +850,7 @@
           "c7bc461d-6171-4edf-bd73-05879a52216f"
         ],
         "settings": {
-          "tabs_list": "best_seller, wishlist, cart",
+          "tabs_list": "cart, wishlist",
           "product_list": [
             "adilette-slide-sandal",
             "adilette-slide-sandal-colorful",

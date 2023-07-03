@@ -2,7 +2,7 @@
   assign section_blocks   = section.blocks
   assign se_stts          = section.settings
   assign ccount           = cart.item_count
-  assign ck_lumise        = 'ck_lumise'  
+  assign ck_lumise        = 'ck_lumise'
   assign cart_url         = routes.cart_url
   assign cart_change_url  = routes.cart_change_url
   assign min_qty          = settings.min_qty | plus: 0
@@ -51,7 +51,7 @@
 {%- capture html_tabs -%}
   {%- liquid
     assign isFirst = false
-    assign tabs_list = se_stts.tabs_list | default:"cart"
+    assign tabs_list = se_stts.tabs_list | default: "cart"
     unless tabs_list contains 'cart'
       assign isFirst = true
     endunless
@@ -59,7 +59,7 @@
 
     if se_stts.product_list == blank
       assign tabs_list = tabs_list | remove: 'best_seller,' | remove: 'best_seller'
-    endif 
+    endif
     if settings.wishlist_mode == "3"
       assign tabs_list = tabs_list | remove: 'wishlist,' | remove: 'wishlist'
     endif
@@ -70,19 +70,19 @@
           {%- if forloop.first and isFirst -%}{% assign classs_active = 'is--active' %}{% assign title_active = 'cart.mini_cart.title_' | append: tabs_item %}{% else %}{% assign classs_active = '' %}{% endif -%}
             {%- if tabs_item == "best_seller" -%}
               <button type="button" data-tab-cart-item class="t4s-drawer__tabs-item t4s-minicart-tabs-item {{ classs_active }}" data-title="{{ 'cart.mini_cart.title_best_seller' | t | escape }}">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-zap"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-zap"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
               </button>
             {%- elsif tabs_item == "wishlist" -%}
               <button type="button" data-tab-cart-item class="t4s-drawer__tabs-item t4s-minicart-tabs-item {{ classs_active }}" data-title="{{ 'cart.mini_cart.title_wishlist' | t | escape }}">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-heart"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-heart"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
               </button>
             {%- elsif tabs_item == "visited" -%}
               <button type="button" data-tab-cart-item class="t4s-drawer__tabs-item t4s-minicart-tabs-item {{ classs_active }}" data-title="{{ 'cart.mini_cart.title_visited' | t | escape }}">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-eye"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-eye"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
               </button>
             {%- elsif tabs_item == "cart" -%}
               <button type="button" data-is-tab-cart data-tab-cart-item class="t4s-drawer__tabs-item t4s-minicart-tabs-item is--active" data-title="{{ 'cart.mini_cart.title' | t | escape }}">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-shopping-bag"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-shopping-bag"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
               </button>
           {%- endif -%}
         {%- endfor -%}
@@ -121,8 +121,8 @@
 {%- endcapture -%}
 
 {%- if request.design_mode -%}
-<link href="{{ 'mini-cart.css' | asset_url }}" rel="stylesheet" media="print" onload="this.media='all'">
-<div data-cart-wrapper id="t4s-mini_cart" data-ccount="{{ cart.item_count }}" class="t4s-drawer t4s-drawer__right t4s-dn" aria-hidden="true">
+  <link href="{{ 'mini-cart.css' | asset_url }}" rel="stylesheet" media="print" onload="this.media='all'">
+  <div data-cart-wrapper id="t4s-mini_cart" data-ccount="{{ cart.item_count }}" class="t4s-drawer t4s-drawer__right t4s-dn" aria-hidden="true">
 {%- endif -%}
 
   <div class="t4s-drawer__header">
@@ -133,25 +133,25 @@
   </div>
 
   {{ html_tabs }}
-      
+
   {%- if tabs_list.size > 0 %}
     {%- for tabs_item in tabs_list limit: 4 -%}
       {%- if forloop.first and isFirst -%}{% assign aria_hidden = false %}{% else %}{% assign aria_hidden = true %}{% endif -%}
       {%- if tabs_item == "best_seller" -%}
-        {%- liquid 
-          assign product_list = se_stts.product_list 
+        {%- liquid
+          assign product_list = se_stts.product_list
           assign price_varies_style = settings.price_varies_style
           assign placeholder_img = settings.placeholder_img  -%}
-          <div id="t4s-tab-bestseller" data-cart-tab-content class="t4s-minicart-tabs-item-wrap" aria-hidden="{{ aria_hidden }}"> 
+          <div id="t4s-tab-bestseller" data-cart-tab-content class="t4s-minicart-tabs-item-wrap" aria-hidden="{{ aria_hidden }}">
             <div class="t4s-minicart-tabs-item-content t4s-current-scrollbar t4s-list-products-bestseller t4s_cover t4s_position_8 t4s_ratioadapt" data-t4s-scroll-me>
                 {% for product in product_list %}
-                 {%- render 'pr-loop-item', block: block, product: product, placeholder_img: placeholder_img, price_varies_style: price_varies_style -%} 
+                 {%- render 'pr-loop-item', block: block, product: product, placeholder_img: placeholder_img, price_varies_style: price_varies_style -%}
                 {% endfor %}
             </div>
           </div>
       {%- elsif tabs_item == "wishlist" -%}
-        <div id="t4s-tab-wishlist" data-cart-tab-content class="t4s-minicart-tabs-item-wrap" aria-hidden="{{ aria_hidden }}"> 
-           <div class="t4s-minicart-tabs-item-content t4s-current-scrollbar t4s-list-products-wishlist t4s_cover t4s_position_8 t4s_ratioadapt" data-t4s-scroll-me> 
+        <div id="t4s-tab-wishlist" data-cart-tab-content class="t4s-minicart-tabs-item-wrap" aria-hidden="{{ aria_hidden }}">
+           <div class="t4s-minicart-tabs-item-content t4s-current-scrollbar t4s-list-products-wishlist t4s_cover t4s_position_8 t4s_ratioadapt" data-t4s-scroll-me>
               <div class="t4s-mini_cart__emty t4s-text-center t4s-tab-wishlist-empty">
                 <svg class="t4s-empty-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-heart"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
                 {{ 'cart.mini_cart.empty_wishlist' | t }}
@@ -169,8 +169,8 @@
            </div>
         </div>
       {%- elsif tabs_item == "visited" -%}
-        <div id="t4s-tab-visited" data-cart-tab-content class="t4s-minicart-tabs-item-wrap" aria-hidden="{{ aria_hidden }}"> 
-           <div class="t4s-minicart-tabs-item-content t4s-current-scrollbar t4s-list-products-visited t4s_cover t4s_position_8 t4s_ratioadapt" data-t4s-scroll-me> 
+        <div id="t4s-tab-visited" data-cart-tab-content class="t4s-minicart-tabs-item-wrap" aria-hidden="{{ aria_hidden }}">
+           <div class="t4s-minicart-tabs-item-content t4s-current-scrollbar t4s-list-products-visited t4s_cover t4s_position_8 t4s_ratioadapt" data-t4s-scroll-me>
               <div class="t4s-mini_cart__emty t4s-text-center t4s-tab-visited-empty">{{ 'cart.mini_cart.empty_visited' | t }}</div>
               <div class="t4s-tab-visited-skeleton" style="display: none;">
                 {%- for i in (1..5) -%}
@@ -240,7 +240,7 @@
                        <div data-cart-ship-text class="t4s-cart__thres1">{{ 'cart.shipping_threshold.text_1_html' | t: money: shipping_money }}</div>
                     {%- elsif shipping_amount > total_price %}{% assign space_money = shipping_amount | minus: total_price | money -%}
                        <div data-cart-ship-text class="t4s-cart__thres2">{{ 'cart.shipping_threshold.text_2_html' | t: money: space_money }}</div>
-                       
+
                        {%- if enable_shipbar -%}
                          {%- liquid
                          assign array_shipbar_per = des_shipbar_per_1 | append: ';' | append: des_shipbar_per_2 | append: ';' | append: des_shipbar_per_3 | split: ';' | sort_natural
@@ -274,7 +274,7 @@
                     {%- endif -%}
 
                  {%- endcapture -%}
-                  
+
                  {%- style -%}
                  [data-t4s-percent="{% if des_shipbar_per_1 == 100 %}{{ less_100 }}{% else %}{{ des_shipbar_per_1 }}{% endif %}"] { --main-threshold-color: {{ settings.des_shipbar_cl_1 }}; }
                  [data-t4s-percent="{% if des_shipbar_per_2 == 100 %}{{ less_100 }}{% else %}{{ des_shipbar_per_2 }}{% endif %}"] { --main-threshold-color: {{ settings.des_shipbar_cl_2 }}; }
@@ -352,10 +352,10 @@
                     {%- when 'group_btns' -%}
                       {%- assign bk_stts = block.settings -%}
                       {%- if bk_stts.btn_viewcart or bk_stts.btn_checkout -%}
-                          
+
                         {{ 'button-style.css' | asset_url | stylesheet_tag }}
                          <link href="{{ 'custom-effect.css' | asset_url }}" rel="stylesheet" media="print" onload="this.media='all'">
-                         
+
                          {%- if settings.currency_type == '2' and settings.notify_currency and settings.mess_currency != blank %}{% assign cart_iso_code = cart.currency.iso_code %}{% assign text1 = '{{ currency }}' -%}
                          {{ 'marquee.css' | asset_url | stylesheet_tag }}
                          <div class="t4s-marquee t4s-marquee--rtl" style="--marquee-delay: 18s"><div class="t4s-marquee__item t4s-marquee--animation"><p class="t4s-db" data-currency-jsnotify>{{ settings.mess_currency | replace: text1,cart_iso_code | replace: '[currency]',cart_iso_code | replace: '[original_currency]',cart_iso_code | replace: '[current_currency]','<span class="selected-currency"></span>' }}</p></div><div class="t4s-marquee__item t4s-marquee--animation t4s-marquee--duplicate"><p class="t4s-db" data-currency-jsnotify>{{ settings.mess_currency | replace: text1,cart_iso_code | replace: '[currency]',cart_iso_code | replace: '[original_currency]',cart_iso_code | replace: '[current_currency]','<span class="selected-currency"></span>' }}</p></div></div>
@@ -376,10 +376,10 @@
 
                     {%- when 'btnmr' -%}
                        {%- if additional_checkout_buttons and unadmin_sp and settings.enable_sub_reCharge == false  -%}<div data-add-ckt4 class="additional_checkout_buttons additional-checkout-buttons--vertical" {{ block.shopify_attributes }}>{{ content_for_additional_checkout_buttons }}</div>{%- endif -%}
-                    
+
                     {%- when 'img' -%}{% if block.settings.image == blank %}{% continue %}{% endif -%}{%- assign image = block.settings.image -%}
                        <div class="t4s-cat__imgtrust" {{ block.shopify_attributes }}><img class="t4s-w-100 lazyloadt4s" src="data: image/svg+xml,%3Csvg%20viewBox%3D%220%200%20{{ image.width }}%20{{ image.height }}%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3C%2Fsvg%3E" data-src="{{ image | image_url: width: 1 }}" data-widths="[180, 360, 480, 600]" data-sizes="auto" width="{{ image.width }}" height="{{ image.height }}" alt="{{ image.alt | escape }}"></div>
-                    
+
                     {%- else -%}{% continue -%}
                  {%- endcase -%}
               {%- endfor -%}
@@ -388,9 +388,9 @@
       {%- endif -%}
     {%- endfor -%}
   {%- endif -%}
-  
+
   {%- if se_stts.enable_note -%}
-  <div class="t4s-mini_cart-tool__content is--note t4s-pe-none">             
+  <div class="t4s-mini_cart-tool__content is--note t4s-pe-none">
      <label for="CartSpecialInstructions" class="t4s-d-block"><span class="t4s-txt_add_note {{ style_add }}">{{ 'cart.tool.note' | t }}</span><span class="t4s-txt_edit_note {{ style_edit }}">{{ 'cart.tool.edit_note' | t }}</span></label>
      <textarea name="note" data-opend-focus id="CartSpecialInstructions" placeholder="{{ 'cart.tool.placeholder_note' | t }}">{{ cart.note }}</textarea>
      <button type="button" data-cart-tool_close class="button t4s-mini_cart-tool__primary">{{ 'cart.tool.save' | t }}</button>
@@ -409,7 +409,7 @@
            <div class="t4s-field" id="ShippingProvinceContainer_{{ idShip }}" style="display: none">
              <label for="ShippingProvince_{{ idShip }}" id="address_province_label">{{ 'cart.shipping_estimator.province' | t }}</label>
              <select id="ShippingProvince_{{ idShip }}" name="province" data-default="{% if customer %}{{ customer.default_address.province }}{% endif %}"></select>
-           </div>  
+           </div>
            <div class="t4s-field">
              <label for="ShippingZip_{{ idShip }}">{{ 'cart.shipping_estimator.zip_code' | t }}</label>
              <input type="text" data-opend-focus id="ShippingZip_{{ idShip }}" name="zip" value="{% if customer %}{{ customer.default_address.zip }}{% endif %}"/>
@@ -419,7 +419,7 @@
               <span class="t4s-btn-atc_text">{{ 'cart.shipping_estimator.estimate' | t }}</span>
               <div class="t4s-loading__spinner t4s-dn">
                   <svg  width="16" height="16" aria-hidden="true" focusable="false" role="presentation" class="t4s-svg__spinner" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg"><circle class="t4s-path" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle></svg>
-              </div>  
+              </div>
             </button>
              <button type="button" data-cart-tool_close class="t4s-mini_cart-tool__back">{{ 'cart.tool.cancel' | t }}</button>
            </div>
@@ -432,7 +432,7 @@
               "rate_value": {{ 'cart.shipping_estimator.rate_value' | t | json }},
               "errors": {{ 'cart.shipping_estimator.errors' | t | json }}
             }
-           </template>  
+           </template>
        </div>
     </div>
   {%- endif -%}
@@ -501,12 +501,12 @@
           "info": "Select your best seller product. Only show when \"best_seller\" is choosen",
           "label": "Featured products"
       },
-      {      
-        "type": "paragraph", 
+      {
+        "type": "paragraph",
         "content": "------------------------------"
       },
-      {      
-        "type": "paragraph", 
+      {
+        "type": "paragraph",
         "content": "Those settings are only applicable when the cart contains at least one product."
       },
       {

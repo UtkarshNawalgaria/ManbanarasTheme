@@ -96,7 +96,21 @@
   assign collection_items_per_row = cart_collection_items_per_row | split: '.'
   assign type_filters = se_stts.type_filters
   assign results = search | default: collection
- %}
+
+  assign has_faq = false
+  if collection.metafields.custom.faq_list != blank
+    assign has_faq = true
+  endif
+
+  if has_faq == true
+    assign faq_items = collection.metafields.custom.faq_list.value
+    assign faq_count = 0
+
+    for item in faq_items
+      assign faq_count = faq_count | plus: 1
+    endfor
+  endif
+%}
 
 {% paginate collection.products by limit %}
 <div
@@ -104,8 +118,14 @@
   {% if stt_image_bg != blank and stt_layout != 't4s-se-container' %} data-bgset="{{ stt_image_bg | image_url: width: 1 }}" data-sizes="auto" data-optimumx="1.5"{% endif %}
   {% render 'section_style', se_stts: se_stts %}>
   {{- html_layout[0] -}}
-  {% if stt_layout == 't4s-se-container' %}<div class="t4s-container-inner {% if stt_image_bg != blank %} t4s-has-imgbg lazyloadt4s {% endif %}" {% if stt_image_bg != blank %} data-bgset="{{ stt_image_bg | image_url: width: 1 }}" data-sizes="auto"  data-optimumx="1.5"{% endif %}>{% endif %}
-  {% if se_stts.position_desc == '1' and se_stts.show_desc %}<div id="t4s-desc-collection" class="t4s-desc-collection t4s-desc-before">{{ collection.description }}</div>{% endif %}
+  {% if stt_layout == 't4s-se-container' %}
+    <div class="t4s-container-inner {% if stt_image_bg != blank %} t4s-has-imgbg lazyloadt4s {% endif %}" {% if stt_image_bg != blank %} data-bgset="{{ stt_image_bg | image_url: width: 1 }}" data-sizes="auto"  data-optimumx="1.5"{% endif %}>
+  {% endif %}
+  {% if se_stts.position_desc == '1' and se_stts.show_desc %}
+    <div id="t4s-desc-collection" class="t4s-desc-collection t4s-desc-before">
+      {{ collection.description }}
+    </div>
+  {% endif %}
 
   {% if se_blocks.size > 0 %}
     <div class="t4s-collection-header t4s-d-flex t4s-has-product-style{{ product_des }}">
@@ -215,13 +235,13 @@
     {% if show_filter and style_filters == 'area' %}<div class="t4s-filter-area" data-filter-area></div>{% endif %}
   {% endif %}
 
-  <div class="t4s-row">
-    <div
-      data-ntajax-container
-      {% if show_filter %}data-has-filters{% endif %}
-      data-ntajax-options='{"id": "{{ sid }}","type": "{{ typeAjax }}","typeFilters": "{{ type_filters }}","isProduct": true,"updateURL": true,"updateURLPrev": true,"sort_by":"{{ collection.sort_by | default: collection.default_sort_by }}"}'
-      {% unless collection.current_type or collection.current_vendor %}data-collection-url="{{ collection.url }}"{% endunless %}
-      class="t4s-col-item t4s-col-12 t4s-main-area t4s-main-collection-page">
+<div class="t4s-row">
+  <div
+    data-ntajax-container
+    {% if show_filter %}data-has-filters{% endif %}
+    data-ntajax-options='{"id": "{{ sid }}","type": "{{ typeAjax }}","typeFilters": "{{ type_filters }}","isProduct": true,"updateURL": true,"updateURLPrev": true,"sort_by":"{{ collection.sort_by | default: collection.default_sort_by }}"}'
+    {% unless collection.current_type or collection.current_vendor %}data-collection-url="{{ collection.url }}"{% endunless %}
+    class="t4s-col-item t4s-col-12 t4s-main-area t4s-main-collection-page">
      {% assign total_active_values = 0 %}
      {% capture filters__active %}
         <div class="t4s-active-filters__count t4s-d-inline-block">{{ 'products.facets.results_with_count_html' | t: count: collection.products_count }}</div>
@@ -340,24 +360,71 @@
 {% if enable_listing and cart_collection_items_per_row contains 'list_t4s' %}
 {% comment %}  list_t4s.2.5 is--listview t4s-row-cols-list_t4s t4s-row-cols-md-2 t4s-row-cols-lg-5 {% endcomment %}
 <script>
-    (function() {
-       var windowWidth = window.innerWidth,
-       onlistview      = {{ collection_items_per_row | json }},
-       producSelector  = document.querySelectorAll('#shopify-section-{{ section.id }} .t4s-products')[0],
-       classListview   = 'is--listview on--list-',
-       classListview2  = classListview;
+  (function() {
+      var windowWidth = window.innerWidth,
+      onlistview      = {{ collection_items_per_row | json }},
+      producSelector  = document.querySelectorAll('#shopify-section-{{ section.id }} .t4s-products')[0],
+      classListview   = 'is--listview on--list-',
+      classListview2  = classListview;
 
-       if ( windowWidth < 768 && onlistview[0] == 'list_t4s' ) {
-          classListview = classListview +'mobile';
-       } else if ( windowWidth > 767 && windowWidth < 1025 && onlistview[1] == 'list_t4s' ) {
-          classListview = classListview +'tablet';
-       } else if (windowWidth > 1024 && onlistview[2] == 'list_t4s') {
-          classListview = classListview +'desktop';
-       }
-       if (classListview != classListview2)
-       producSelector.className += ' '+classListview;
+      if ( windowWidth < 768 && onlistview[0] == 'list_t4s' ) {
+        classListview = classListview +'mobile';
+      } else if ( windowWidth > 767 && windowWidth < 1025 && onlistview[1] == 'list_t4s' ) {
+        classListview = classListview +'tablet';
+      } else if (windowWidth > 1024 && onlistview[2] == 'list_t4s') {
+        classListview = classListview +'desktop';
+      }
+      if (classListview != classListview2)
+      producSelector.className += ' '+classListview;
 
-    }());
+  }());
+</script>
+{% endif %}
+
+{% if has_faq %}
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "count": {{ faq_count }},
+    "mainEntity":[
+      {% for faq_item in faq_items %}{
+          "@type": "Question",
+          "name":" {{ faq_item.question }}",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "{{ faq_item.answer | strip_html }}"
+          }
+      }{% if forloop.index != faq_count %}{{ "," }}{% endif %}
+      {% endfor %}]
+  }
+</script>
+{% endif %}
+
+{% if collection.products.size >= 1 %}
+{% assign item_count = 10 %}
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "url": "{{ shop.url }}{{ collection.url }}",
+    "numberOfItems": {{ item_count }},
+    "itemListElement": [
+      {% for product in collection.products limit: item_count %}{
+        "@type": "Product",
+        "position": "{{ forloop.index }}",
+        "url": "{{ shop.url }}{{ product.url }}",
+        "name": "{{ product.title | strip_html | escape }}",
+        "image": "{{ product.featured_image | image_url: width: 512 }}",
+        "description": "{{ product.description | strip_html | escape }}",
+        "offers": {
+          "@type": "Offer",
+          "price": "{{ product.price | money_without_currency | split: "," | join: "" }}",
+          "priceCurrency": "{{ cart.currency.iso_code }}"
+        }
+      }{% if forloop.index != item_count %}{{ "," }}{% endif %}
+    {% endfor %}]
+  }
 </script>
 {% endif %}
 

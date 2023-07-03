@@ -4760,10 +4760,10 @@ blockquote small{
    transition: opacity .3s ease-in-out,visibility .3s ease-in-out;
 }
 .t4s-close-overlay.is--visible {
-    pointer-events: auto;
-    opacity: 1;
-    visibility: visible;
-    transition: opacity .25s,visibility;
+  pointer-events: auto;
+  opacity: 1;
+  visibility: visible;
+  transition: opacity .25s,visibility;
 }
 
 /* fix app shopify overflow */
