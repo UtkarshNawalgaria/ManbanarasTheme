@@ -129,19 +129,10 @@
             "readm_txt": "Read more"
           }
         },
-        "e8f22b12-b4a8-4a95-b4bc-9a0d2c8075c5": {
-          "type": "delivery_ask",
-          "settings": {
-            "delivery": true,
-            "page_dr": "shipping-delivery",
-            "ask": false,
-            "phone": false
-          }
-        },
         "4aa9c333-0ebd-4932-a29a-79cc5b7a3e83": {
           "type": "text",
           "settings": {
-            "text": "<p><strong>Top Length<\/strong> - 2.5mtrs<\/p><p><strong>Availability<\/strong> - 10-15 days<\/p>"
+            "text": "<p><strong>Top Length<\/strong>: 2.5mtrs<\/p><p><strong>Availability<\/strong>: 10-15 days<\/p>"
           }
         },
         "6927e5dd-04a4-4db6-a60c-76fab4d0069a": {
@@ -160,12 +151,6 @@
             "space_h_item_mb": "10",
             "space_v_item_mb": "2"
           }
-        },
-        "ff4e4ed9-2087-42f7-8182-94e5a5181c84": {
-          "type": "tab_add",
-          "settings": {
-            "title": "Additional Information"
-          }
         }
       },
       "block_order": [
@@ -177,10 +162,8 @@
         "8f619784-04a8-4c20-b813-6902f9e3e922",
         "9a762a35-bfda-41d8-ba84-12cf8c02f1be",
         "c95ef22a-9ef4-4ad0-ab70-7ede559ff45e",
-        "e8f22b12-b4a8-4a95-b4bc-9a0d2c8075c5",
         "4aa9c333-0ebd-4932-a29a-79cc5b7a3e83",
-        "6927e5dd-04a4-4db6-a60c-76fab4d0069a",
-        "ff4e4ed9-2087-42f7-8182-94e5a5181c84"
+        "6927e5dd-04a4-4db6-a60c-76fab4d0069a"
       ],
       "settings": {
         "pr_layout": "default",

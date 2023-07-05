@@ -50,6 +50,7 @@
     "size_currency": "sm",
     "colors_css": true,
     "global_css": ".t4s-tabs-inline .t4s-tabs-head {    align-items: flex-end;}",
+    "t4s_custom_js": true,
     "share_facebook": true,
     "share_twitter": true,
     "share_email": true,
