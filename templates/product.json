@@ -4,6 +4,7 @@
       "type": "brc-nav-product",
       "settings": {
         "breadcrumb_pr": true,
+        "breadcrumb_pr_mobile": true,
         "back_next_pr": true,
         "box_border": "top",
         "cl_bg": "rgba(0,0,0,0)",
