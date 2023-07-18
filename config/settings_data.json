@@ -1868,7 +1868,7 @@
           "hidden_footer": false,
           "collapse": true,
           "align_vertical": true,
-          "border_top": true,
+          "border_top": false,
           "border_pos": "full",
           "space_h_item": "30",
           "space_v_item": "0",
