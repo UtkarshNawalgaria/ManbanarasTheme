@@ -279,7 +279,6 @@
     },
     "165959802606d0c363": {
       "type": "custom-section",
-      "disabled": true,
       "blocks": {
         "1659598025534a54ac-0": {
           "type": "bl_col",
@@ -500,6 +499,7 @@
         "ed8eb943-0865-48a7-85f1-ad4a55d87379",
         "93fec8b1-4809-461f-bea2-8b208414d52f"
       ],
+      "disabled": true,
       "settings": {
         "space_h_item": "30",
         "space_v_item": "30",
@@ -964,7 +964,6 @@
     },
     "1659597722f6681f43": {
       "type": "custom-section",
-      "disabled": true,
       "blocks": {
         "1659597722890d58bc-7": {
           "type": "bl_col",
@@ -1021,6 +1020,7 @@
         "1659597722890d58bc-7",
         "1659597722890d58bc-8"
       ],
+      "disabled": true,
       "settings": {
         "space_h_item": "30",
         "space_v_item": "30",
@@ -1041,7 +1041,6 @@
     },
     "16596017839f8025b0": {
       "type": "our_team",
-      "disabled": true,
       "blocks": {
         "1659601783ba8576b7-0": {
           "type": "member",
@@ -1102,6 +1101,7 @@
         "1659601783ba8576b7-2",
         "f4dd1e64-81c2-4619-8b55-6398cb98e6bf"
       ],
+      "disabled": true,
       "settings": {
         "design_heading": "1",
         "heading_center": true,
@@ -1163,7 +1163,6 @@
     },
     "1659597722f6681f45": {
       "type": "custom-section",
-      "disabled": true,
       "blocks": {
         "1659597722890d58bc-3": {
           "type": "bl_col",
@@ -1248,6 +1247,7 @@
         "1659597722890d58bc-1",
         "1659597722890d58bc-2"
       ],
+      "disabled": true,
       "settings": {
         "space_h_item": "30",
         "space_v_item": "30",
@@ -1268,7 +1268,6 @@
     },
     "1659601277db757be5": {
       "type": "map-pin-info",
-      "disabled": true,
       "blocks": {
         "16596012772d17765b-0": {
           "type": "custom_text",
@@ -1438,6 +1437,7 @@
         "16596012772d17765b-4",
         "16596012772d17765b-5"
       ],
+      "disabled": true,
       "settings": {
         "source": "map",
         "se_height": "t4s_ratio_cuspx",

@@ -53,7 +53,7 @@
         "cl_bg_gradient": "",
         "mg": ",,50px,",
         "pd": "",
-        "mg_tb": ",,50px,",
+        "mg_tb": ",,20px,",
         "pd_tb": "",
         "mg_mb": ",,30px,",
         "pd_mb": ""
@@ -232,7 +232,6 @@
     },
     "sidebar": {
       "type": "sidebar-collection",
-      "disabled": true,
       "blocks": {
         "cd6064d5-464c-431c-b47b-e363158ab8bd": {
           "type": "category",
@@ -253,6 +252,7 @@
         "cd6064d5-464c-431c-b47b-e363158ab8bd",
         "7ac6f497-c7ca-4dac-8f59-0084f052835e"
       ],
+      "disabled": true,
       "settings": {
         "enable_drawer": false,
         "space": 50,
