@@ -1067,19 +1067,6 @@
               "title": "Home"
             }
           },
-          "9c8f0417-348e-4388-9d59-c28103a48372": {
-            "type": "nav",
-            "settings": {
-              "title": "Menu"
-            }
-          },
-          "c243ff5d-c00d-4af1-a110-d74a4cdb8a74": {
-            "type": "shop",
-            "settings": {
-              "title": "Shop",
-              "link": ""
-            }
-          },
           "ea5e77c0-b7d2-4249-8427-6f2432b3bf99": {
             "type": "account",
             "settings": {
@@ -1101,8 +1088,6 @@
         },
         "block_order": [
           "363a442e-2da6-4d11-8264-daebc8ef1674",
-          "9c8f0417-348e-4388-9d59-c28103a48372",
-          "c243ff5d-c00d-4af1-a110-d74a4cdb8a74",
           "ea5e77c0-b7d2-4249-8427-6f2432b3bf99",
           "d7e81cd1-b0f0-4abc-a857-30f2491a64d7",
           "1f858a68-eafb-42bc-9705-e741dd538622"
@@ -1409,7 +1394,7 @@
           "pr_btn_round": 40,
           "pr_title_color": "#222222",
           "pr_title_color_hover": "#56cfe1",
-          "price_color": "#696969",
+          "price_color": "#000000",
           "price_sale_color": "#e33131",
           "vendors_color": "#878787",
           "vendors_color_hover": "#56cfe1",
