@@ -1,3 +1,12 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "sections": {
     "heading": {
@@ -82,7 +91,7 @@
           "type": "bl_info",
           "settings": {
             "heading": "Contact Us",
-            "text": "<p>We love to hear from you on our customer service, merchandise, website or any topics you want to share with us. Your comments and suggestions will be appreciated. Please complete the form below.<\/p>\n<p class=\"t4-contact-form__icon\">\n  <i class=\"las la-map-marker\"><\/i><span>Plot No. 271, First Floor, Industrial Estate Road Shivdaspur, near Samrat Dharamkata, Varanasi, Uttar Pradesh 221002<\/span>\n<\/p>\n<p class=\"t4-contact-form__icon\">\n  <i class=\"las la-phone\"><\/i><span>+919198856789<\/span>\n<\/p>\n<p class=\"t4-contact-form__icon\">\n  <i class=\"las la-envelope\"><\/i><span>support@divinemanbanaras.com<\/span>\n<\/p>",
+            "text": "<p>We love to hear from you on our customer service, merchandise, website or any topics you want to share with us. Your comments and suggestions will be appreciated. Please complete the form below.<\/p>\n<p class=\"t4-contact-form__icon\">\n  <i class=\"las la-map-marker\"><\/i><span>Plot No. 271, First Floor, Industrial Estate Road Shivdaspur, near Samrat Dharamkata, Varanasi, Uttar Pradesh 221002<\/span>\n<\/p>\n<p class=\"t4-contact-form__icon\">\n  <i class=\"las la-phone\"><\/i><span><br>+91 9198856789<br> +91 7800041000 <\/span>\n<\/p>\n<p class=\"t4-contact-form__icon\">\n  <i class=\"las la-envelope\"><\/i><span>support@divinemanbanaras.com<\/span>\n<\/p>",
             "enable_socials": true,
             "heading_socials": "Our socials",
             "social_mode": "1",
