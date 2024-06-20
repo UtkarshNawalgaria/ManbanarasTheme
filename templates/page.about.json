@@ -539,15 +539,6 @@
             "text": "<p>Free shipping in India.<\/p>"
           }
         },
-        "16594120047962ad67-1": {
-          "type": "shipping",
-          "settings": {
-            "icon_themes": "box2",
-            "icon": "las la-redo-alt",
-            "title": "7 Days Return",
-            "text": "<p>7-days free return policy.<\/p>"
-          }
-        },
         "16594120047962ad67-2": {
           "type": "shipping",
           "settings": {
@@ -556,12 +547,21 @@
             "title": "Security Payment",
             "text": "<p>We accept all major credit cards.<\/p>"
           }
+        },
+        "16594120047962ad67-1": {
+          "type": "shipping",
+          "settings": {
+            "icon_themes": "box2",
+            "icon": "las la-redo-alt",
+            "title": "7 Days Return",
+            "text": "<p>7-days free return policy.<\/p>"
+          }
         }
       },
       "block_order": [
         "16594120047962ad67-0",
-        "16594120047962ad67-1",
-        "16594120047962ad67-2"
+        "16594120047962ad67-2",
+        "16594120047962ad67-1"
       ],
       "settings": {
         "design_heading": "1",
